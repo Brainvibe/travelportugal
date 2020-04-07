@@ -15,11 +15,26 @@ body {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
+}
 
+.nav-link {
+    color: white;
 }
 
 .navbar .navbar-toggler {
     margin-right: 5px;
 }
 
+.navbar-brand {
+    font-family: 'Caveat Brush', cursive;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+}
 
+.navbar-nav {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: white;
+}
