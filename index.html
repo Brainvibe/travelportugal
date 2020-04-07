@@ -25,6 +25,16 @@
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="weather-container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <img class="icon">
+          <p class="weather"></p>
+          <p class="temp"></p>
+        </div>
+      </div>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
@@ -63,11 +73,18 @@
 
 
 
+    <!--Bootstrap, Popper and jQuery-->
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <!--Google maps, weather js and main js-->
+    <script src="assets/js/weather.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"
+      async defer></script>
 </body>
 
 </html>

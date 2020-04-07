@@ -56,7 +56,7 @@ body {
     color: white;
 }
 
-/*Opaque overlay*/
+/*Opaque overlay in main container*/
 
 .opaque-overlay {
     position: absolute;
