@@ -1,0 +1,25 @@
+/**** smooth scroll ****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**** body settings ****/
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**** Navbar properties ****/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.navbar .navbar-toggler {
+    margin-right: 5px;
+}
+
+
