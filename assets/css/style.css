@@ -34,20 +34,21 @@ body {
 }
 
 .navbar-nav {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     color: white;
+    margin-left:10px;
 }
 
 /**** Main Container ****/
 
 .main-container {
     height: 100vh;
-    background: url('../images/main-lisbon.jpg') no-repeat center center fixed;
+    background: url('../images/main-algarve.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -65,4 +66,23 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weather-container{
+    position: absolute;
+    color:white;
+    right:100px;
+    font-size: 15px;
+    
+}
+
+
+
+.title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+}
+.title-second{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
 }
