@@ -92,10 +92,11 @@ body {
     width: 20%;
 }
 
+
 /**** Features container ****/
 
 .features-container {
-    height: 100vh;
+    height: 60vh;
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
     align-items: center;
@@ -124,7 +125,7 @@ body {
 
 .recommendations-container {
   
-    height: 100vh;
+    height: 800vh;
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
     align-items: center;
@@ -140,10 +141,22 @@ body {
     margin-top: 40px;
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
+.hr-title-recommendations{
+    margin-top:5px;
+    border-top: 1px solid rgb(255, 250, 250);
+    width: 20%;
+}
 
+.recommendation-title2{
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+ 
+}
 
 
 /****Footer settings****/
