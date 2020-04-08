@@ -64,18 +64,57 @@
       <div class="row">
         <div class="col-sm-12">
           <h1 class="title">Welcome to Travel Portugal</h1>
-          <h2 class="title-second">Get your travel fix <span>here</span>.</h2>
+          <h2 class="title-second">Get your travel fix here.</h2>
           <hr class="hr-title">
+        </div>
+        <div id="abc">
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="popupContact">
+                <!-- Contact Us Form -->
+
+                <form id="form" class="text-center p-5" action="#">
+
+                  <img id="close" src="assets/images/close.png" onclick="div_hide()" height="20px" width="20px">
+                  <label class="contactTitle">Contact us</label>
+                  <!-- Name -->
+                  <input type="text" id="name" class="form-control mb-4" placeholder="Name" required>
+
+                  <!-- Email -->
+                  <input type="email" id="email" class="form-control mb-4" placeholder="E-mail" required>
+
+                  <!-- Subject -->
+                  <label>Subject</label>
+                  <select class="custom-select mb-4">
+                    <option value="" disabled>Choose option</option>
+                    <option value="1" selected>Information</option>
+                    <option value="2">Feedback</option>
+
+                  </select>
+
+                  <!-- Message -->
+                  <div class="form-group">
+                    <textarea class="form-control rounded-0" id="FormControlText" rows="5" placeholder="Message"
+                      required></textarea>
+                  </div>
+                  <!-- Send button -->
+                  <button class="btn btn-success btn-block" type="submit">Send</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- Features container-->
 
   <div class="features-container container-fluid">
     <div class="row">
       <div class="col-sm-12 title-feature">
-        <p>Use our App to find the different activities in Portugal</p>
+        <p>Use our interactive map to find different activities in Portugal</p>
         <hr>
       </div>
     </div>
@@ -108,6 +147,31 @@
     </div>
   </div>
 
+<div class="attractions-container container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="attraction-title">Recommendations</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 img-fluid">
+      <p>Lisbon</p>
+      <img src="assets/images/card-lisbon.jpg" alt="" srcset="" height="200" width="200">
+
+    </div>
+    <div class="col-sm-4">
+      <p>Algarve</p>
+      <img src="assets/images/card-algarve.jpg" alt="" srcset="" height="200" width="200">
+    </div>
+    <div class="col-sm-4">
+      <p>Porto</p>
+      <img src="assets/images/card-porto.jpg" alt="" srcset="" height="200" width="200">
+    </div>
+  </div>
+  
+</div>
+
+
 
 
 
@@ -120,6 +184,7 @@
 
   <!--Google maps, weather js and main js-->
   <script src="assets/js/weather.js"></script>
+  <script src="assets/js/contact.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"
     async defer></script>
