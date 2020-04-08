@@ -187,10 +187,87 @@
           <div class="owl-item">
             <img src="assets/images/hotel_setubal.jpg">
           </div>
-
         </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="map-container container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="location" class="map-container">
+
+          <div id="map">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="map-controls container">
+          <div class="form" id="locationField">
+            <form class="form-inline justify-content-center">
+              <div class="form-group">
+                <label class="sr-only" for="email">Enter City name:</label>
+                <input class="form-control" id="autocomplete" placeholder="Enter a city" type="text" />
+
+              </div>
+
+              <div class="dropdown dropdown-position">
+                <button class="btn btn-secondary dropdown-toggle" id="clickme" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Hotels</a>
+                  <a class="dropdown-item" href="#">Bars</a>
+                  <a class="dropdown-item" href="#">Museums</a>
+                  <a class="dropdown-item" href="#">Night Clubs</a>
+                  <a class="dropdown-item" href="#">Attractions</a>
+                  <a class="dropdown-item" href="#">Restaurants</a>
+                  <a class="dropdown-item" href="#">Spa</a>
+                  <a class="dropdown-item" href="#">Amusement Parks</a>
+
+                </div>
+
+              </div>
+            </form>
+            <div id="listing">
+              <table id="resultsTable">
+                <tbody id="results"></tbody>
+              </table>
+            </div>
+            <div style="display: none">
+              <div id="info-content">
+                <table>
+                  <tr id="iw-url-row" class="iw_table_row">
+                    <td id="iw-icon" class="iw_table_icon"></td>
+                    <td id="iw-url"></td>
+                  </tr>
+                  <tr id="iw-address-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Address:</td>
+                    <td id="iw-address"></td>
+                  </tr>
+                  <tr id="iw-phone-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Telephone:</td>
+                    <td id="iw-phone"></td>
+                  </tr>
+                  <tr id="iw-rating-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Rating:</td>
+                    <td id="iw-rating"></td>
+                  </tr>
+                  <tr id="iw-website-row" class="iw_table_row">
+                    <td class="iw_attribute_name">Website:</td>
+                    <td id="iw-website"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 
 
@@ -245,6 +322,7 @@
   <!--Google maps, weather js and main js-->
   <script src="assets/js/weather.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/map.js"></script>
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"

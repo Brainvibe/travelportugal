@@ -167,6 +167,99 @@ body {
     font-size: 15px;
 }
 
+/****Map container ***/
+
+.map-container{
+    height: 100vh;
+    background: url('../images/main-porto.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+
+}
+/*Controls settings*/
+
+td{
+    color:black;
+  }
+  
+  
+  #autocomplete {
+    margin-left: 100px;
+  }
+  
+  /* map settings*/
+  
+  #map {
+    width: 700px;
+    height: 400px;
+    
+  }
+  
+  #listing {
+    margin-top:10px;
+    height: 350px;
+    width: 300px;
+    bottom: -50px;
+    left:190px;
+    top:40px;
+    cursor: pointer;
+    overflow: visible;
+    overflow-x: hidden;
+    display: flex;
+    position: absolute;
+   
+  
+  }
+  
+  
+  #findhotels {
+    font-size: 14px;
+  }
+  
+  .placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+  }
+  
+  .hotelIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  #resultsTable {
+    border-collapse: collapse;
+    width: 300px;
+    height:300px;
+    bottom: -50px;
+  }
+  
+  #rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+  }
+  
+  .iw_table_row {
+    height: 18px;
+  }
+  
+  .iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .iw_table_icon {
+    text-align: right;
+  }
+
 /****Footer settings****/
 
 .footer-container {
