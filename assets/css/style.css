@@ -122,14 +122,29 @@ body {
     margin-bottom: 20px;
 }
 
-.attractions-container {
+.recommendations-container {
+  
+    height: 100vh;
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
     align-items: center;
-    color: rgb(114, 112, 112);
+    color: white;
     background-color: white;
     position: relative;
+    background-color: #2C2E3E;
+
 }
+
+
+.recommendation-title{
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+
 
 /****Footer settings****/
 

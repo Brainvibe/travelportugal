@@ -7,6 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+  <!--owlcarousel-->
+  <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+
+  <!--Style CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!--Fonts-->
@@ -51,7 +57,7 @@
           <a class="nav-link" href="#">Recommendations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Attractions</a>
+          <a class="nav-link" href="#">Map</a>
         </li>
       </ul>
     </div>
@@ -70,6 +76,7 @@
       </div>
     </div>
   </div>
+ 
   <!-- Features container-->
 
   <div class="features-container container-fluid">
@@ -105,77 +112,82 @@
     </div>
   </div>
 
+ <!-- Recommendations container-->
 
-  <div class="attractions-container container-fluid">
+  <div class="recommendations-container container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <p class="attraction-title">Recommendations</p>
+        <p class="recommendation-title">Recommendations</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4 img-fluid">
-        <p>Lisbon</p>
-        <img src="assets/images/card-lisbon.jpg" alt="" srcset="" height="200" width="300">
 
-      </div>
-      <div class="col-sm-4">
-        <p>Algarve</p>
-        <img src="assets/images/card-algarve.jpg" alt="" srcset="" height="200" width="300">
-      </div>
-      <div class="col-sm-4">
-        <p>Porto</p>
-        <img src="assets/images/card-porto.jpg" alt="" srcset="" height="200" width="300">
+    <div class="owl-carousel owl-theme owl-loaded">
+      <div class="owl-stage-outer">
+        <div class="owl-stage">
+          <div class="owl-item">1</div>
+          <div class="owl-item">2</div>
+          <div class="owl-item">3</div>
+          <div class="owl-item">3</div>
+          <div class="owl-item">3</div>
+          <div class="owl-item">3</div>
+          <div class="owl-item">3</div>
+        </div>
       </div>
     </div>
   </div>
 
+
+
   <div class=" container-fluid footer-container">
     <section class="footer-section">
-        <div class="row">
-            <div class="container-fluid social-icons">
-                <div class="row contain-icons">
-                    <div class="col-xs-4 icon">
-                        <a target="_blank" href="https://www.facebook.com">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="col-xs-4 icon">
-                        <a target="_blank" href="https://www.twitter.com">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    <div class="col-xs-4 icon">
-                        <a target="_blank" href="https://www.instagram.com">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="col-xs-4 icon">
-                        <a target="_blank" href="https://www.youtube.com">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="container-fluid social-icons">
+          <div class="row contain-icons">
+            <div class="col-xs-4 icon">
+              <a target="_blank" href="https://www.facebook.com">
+                <i class="fab fa-facebook"></i>
+              </a>
             </div>
-        </div>
-        <div class="row">
-            <div class="container-fluid footer-container">
-                <div class="col-sm-12">
-                    <span>Designed by Nuno Nunes</span>
-                </div>
+            <div class="col-xs-4 icon">
+              <a target="_blank" href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
             </div>
+            <div class="col-xs-4 icon">
+              <a target="_blank" href="https://www.instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="col-xs-4 icon">
+              <a target="_blank" href="https://www.youtube.com">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="container-fluid footer-container">
+          <div class="col-sm-12">
+            <span>Designed by Nuno Nunes</span>
+          </div>
+        </div>
+      </div>
     </section>
-</div>
+  </div>
 
   <!--Bootstrap, Popper and jQuery-->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!--owlcarousel-->
 
 
   <!--Google maps, weather js and main js-->
   <script src="assets/js/weather.js"></script>
+  <script src="assets/js/main.js"></script>
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"
