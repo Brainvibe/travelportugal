@@ -132,7 +132,7 @@ body {
 }
 
 .recommendations-container {
-    height: 100vh;
+    height: 120vh;
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
     align-items: center;
@@ -162,14 +162,14 @@ body {
     margin-bottom: 40px;
 }
 
-.hotel_description{
+.hotel_description {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
 }
 
 /****Map container ***/
 
-.map-container{
+.map-container {
     height: 100vh;
     background: url('../images/main-porto.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -177,88 +177,90 @@ body {
     -o-background-size: cover;
     font-family: 'Quicksand', sans-serif;
     background-size: cover;
-    display: flex;
+  
     align-items: center;
     justify-content: center;
     position: relative;
     color: white;
-
 }
+
 /*Controls settings*/
 
-td{
-    color:black;
-  }
-  
-  
-  #autocomplete {
+td {
+    color: black;
+}
+
+#autocomplete {
     margin-left: 100px;
-  }
-  
-  /* map settings*/
-  
-  #map {
+}
+
+/* map settings*/
+
+#map {
     width: 700px;
     height: 400px;
-    
-  }
-  
-  #listing {
-    margin-top:10px;
+}
+
+#listing {
+    margin-top: 10px;
     height: 350px;
     width: 300px;
     bottom: -50px;
-    left:190px;
-    top:40px;
+    left: 190px;
+    top: 40px;
     cursor: pointer;
     overflow: visible;
     overflow-x: hidden;
     display: flex;
     position: absolute;
-   
-  
-  }
-  
-  
-  #findhotels {
+}
+
+#findhotels {
     font-size: 14px;
-  }
-  
-  .placeIcon {
+}
+
+.placeIcon {
     width: 20px;
     height: 34px;
     margin: 4px;
-  }
-  
-  .hotelIcon {
+}
+
+.hotelIcon {
     width: 24px;
     height: 24px;
-  }
-  
-  #resultsTable {
+}
+
+#resultsTable {
     border-collapse: collapse;
     width: 300px;
-    height:300px;
+    height: 300px;
     bottom: -50px;
-  }
-  
-  #rating {
+}
+
+#rating {
     font-size: 13px;
     font-family: Arial Unicode MS;
-  }
-  
-  .iw_table_row {
+}
+
+.iw_table_row {
     height: 18px;
-  }
-  
-  .iw_attribute_name {
+}
+
+.iw_attribute_name {
     font-weight: bold;
     text-align: right;
-  }
-  
-  .iw_table_icon {
+}
+
+.iw_table_icon {
     text-align: right;
-  }
+}
+
+.map-title {
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
 /****Footer settings****/
 
@@ -292,4 +294,44 @@ i {
 
 i:hover {
     color: gray;
+}
+
+/****Media Queries ****/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .features-container {
+        height: 180vh;
+    }
+    .recommendations-container {
+        height: 160vh;
+    }
+    .map-container {
+        height: 200vh;
+    }
 }
