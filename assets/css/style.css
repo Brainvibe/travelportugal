@@ -185,7 +185,9 @@ body {
 }
 
 /*Controls settings*/
-
+.map-controls{
+    margin-top:60px;
+}
 td {
     color: black;
 }
@@ -197,6 +199,7 @@ td {
 /* map settings*/
 
 #map {
+    margin-top: 60px;
     width: 700px;
     height: 400px;
 }
