@@ -193,7 +193,10 @@ td {
 }
 
 #autocomplete {
-    margin-left: 100px;
+    width: 150px;
+}
+#category{
+    align-items: center;
 }
 
 /* map settings*/
@@ -205,11 +208,11 @@ td {
 }
 
 #listing {
-    margin-top: 10px;
+    margin-top: 60px;
     height: 350px;
     width: 300px;
     bottom: -50px;
-    left: 190px;
+    left: 30px;
     top: 40px;
     cursor: pointer;
     overflow: visible;
