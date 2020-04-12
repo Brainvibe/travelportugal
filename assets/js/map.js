@@ -204,7 +204,7 @@ function initMap() {
 
   autocomplete.addListener('place_changed', onPlaceChanged);
   document.getElementById('category').addEventListener('change', onPlaceChanged);
-  $('#hr').hide();
+//  $('#hr').hide();
 
 
 }
@@ -234,8 +234,8 @@ function doNearbySearch(search) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
-      document.getElementById('results-heading').innerHTML = "Results";
-      $('#hr').show();
+       
+      //      $('#hr').show();
       // Create a marker for each hotel found, and
       // assign a letter of the alphabetic to each marker icon.
       for (var i = 0; i < results.length; i++) {

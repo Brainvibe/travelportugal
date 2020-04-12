@@ -155,13 +155,6 @@ body {
     width: 20%;
 }
 
-.recommendation-title2 {
-    margin-top: 40px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
-    margin-bottom: 40px;
-}
-
 .hotel_description {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
@@ -170,14 +163,13 @@ body {
 /****Map container ***/
 
 .map-container {
-    height: 100vh;
+    height: 130vh;
     background: url('../images/main-porto.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     font-family: 'Quicksand', sans-serif;
     background-size: cover;
-  
     align-items: center;
     justify-content: center;
     position: relative;
@@ -185,17 +177,58 @@ body {
 }
 
 /*Controls settings*/
-.map-controls{
-    margin-top:60px;
+
+.map-controls {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
 }
-td {
-    color: black;
+
+
+
+.gm-style .gm-style-iw-c{
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.gm-style .gm-style-iw-t{
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+#results-div {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display:inline-block;
+    height: 360px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);    
+    
+    
+}
+
+
+
+#resultsTable{
+    position: relative;
+    width:380px;
+    height:300px;
+    text-align: center;    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.map-selection {
+    width: 200px;
 }
 
 #autocomplete {
-    width: 150px;
+    width: 200px;
 }
-#category{
+
+#category {
     align-items: center;
 }
 
@@ -203,27 +236,12 @@ td {
 
 #map {
     margin-top: 60px;
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
 }
 
-#listing {
-    margin-top: 60px;
-    height: 350px;
-    width: 300px;
-    bottom: -50px;
-    left: 30px;
-    top: 40px;
-    cursor: pointer;
-    overflow: visible;
-    overflow-x: hidden;
-    display: flex;
-    position: absolute;
-}
 
-#findhotels {
-    font-size: 14px;
-}
 
 .placeIcon {
     width: 20px;
@@ -236,12 +254,7 @@ td {
     height: 24px;
 }
 
-#resultsTable {
-    border-collapse: collapse;
-    width: 300px;
-    height: 300px;
-    bottom: -50px;
-}
+
 
 #rating {
     font-size: 13px;

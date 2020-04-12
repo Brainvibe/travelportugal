@@ -27,25 +27,26 @@
 </head>
 
 <body>
+
   <!--Nav bar container-->
+
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <a class="navbar-brand" href="#">Travel Portugal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!--Weather api container-->
     <div class="weather-container d-none d-lg-block">
       <div class="row">
         <div class="col-xs-12">
           <img class="icon">
           <p class="temp">Lisbon </p>
         </div>
-
       </div>
-
-
     </div>
-
+    <!--navbar links-->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
@@ -99,13 +100,11 @@
         <p class="fas-title">Nightlife</p>
         <p>Small description here</p>
       </div>
-
       <div class="col-sm-3">
         <i class="fas fa-landmark"></i>
         <p class="fas-title">Attractions</p>
         <p>Small description here</p>
       </div>
-
       <div class="col-sm-3">
         <i class="fas fa-hotel"></i>
         <p class="fas-title">Hotels</p>
@@ -128,7 +127,7 @@
         <p class="recommendation-title2">Accommodation</p>
       </div>
     </div>
-
+    <!--owl carousel-->
     <div class="owl-carousel owl-theme owl-loaded">
       <div class="owl-stage-outer">
         <div class="owl-stage">
@@ -161,10 +160,9 @@
         </div>
       </div>
     </div>
-
   </div>
 
-
+  <!--Map container -->
   <div class="map-container container-fluid">
     <div class="opaque-overlay">&nbsp;</div>
     <div class="row">
@@ -174,90 +172,81 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-12">
         <div id="location">
           <div id="map">
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
         <div class="map-controls container">
-          <div class="form" id="locationField">
-            <div class="form-group">
+          <form class="form-inline">
+            <div class="form-group id=locationField">
               <label class="sr-only" for="email">Enter City name:</label>
               <input class="form-control" id="autocomplete" placeholder="Enter a city" type="text" />
-
             </div>
-          </div>
-
-
-
-          <div class="map-selection">
-            <select class="select-option" id="category">
-              <option value="" selected>Click to select</option>
-              <option id="accommodation" value="accommodation">Hotels</option>
-              <option id="camping" value="accommodation">Camping</option>
-              <option id="attraction" value="attraction">Tourist Attraction</option>
-              <option id="park" value="attraction">Parks</option>
-              <option id="stadium" value="attraction">Sports Stadium</option>
-              <option id="food" value="attraction">Restaurants & Cafes</option>
-              <option id="drink" value="attraction">Bars</option>
-              <option id="club" value="attraction">Clubs</option>
-              <option id="shopping" value="attraction">Shopping</option>
-            </select>
-          </div>
-          <div id="listing">
-            <table id="resultsTable">
-              <tbody id="results"></tbody>
-            </table>
-          </div>
-          <div style="display: none">
-            <div id="info-content">
-              <table>
-                <tr id="iw-url-row" class="iw_table_row">
-                  <td id="iw-icon" class="iw_table_icon"></td>
-                  <td id="iw-url"></td>
-                </tr>
-                <tr id="iw-address-row" class="iw_table_row">
-                  <td class="iw_attribute_name">Address:</td>
-                  <td id="iw-address"></td>
-                </tr>
-                <tr id="iw-phone-row" class="iw_table_row">
-                  <td class="iw_attribute_name">Telephone:</td>
-                  <td id="iw-phone"></td>
-                </tr>
-                <tr id="iw-rating-row" class="iw_table_row">
-                  <td class="iw_attribute_name">Rating:</td>
-                  <td id="iw-rating"></td>
-                </tr>
-                <tr id="iw-website-row" class="iw_table_row">
-                  <td class="iw_attribute_name">Website:</td>
-                  <td id="iw-website"></td>
-                </tr>
+            <div class="map-selection">
+              <select class="form-control select-option" id="category">
+                <option value="" selected>Click to select</option>
+                <option id="accommodation" value="accommodation">Hotels</option>
+                <option id="camping" value="accommodation">Camping</option>
+                <option id="attraction" value="attraction">Tourist Attraction</option>
+                <option id="park" value="attraction">Parks</option>
+                <option id="stadium" value="attraction">Sports Stadium</option>
+                <option id="food" value="attraction">Restaurants & Cafes</option>
+                <option id="drink" value="attraction">Bars</option>
+                <option id="club" value="attraction">Clubs</option>
+                <option id="shopping" value="attraction">Shopping</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" id="hr">
+            <div id="results-div">
+              <table id="resultsTable">
+                <tbody id="results"></tbody>
               </table>
             </div>
-          </div>
-          <div class="row">
-            <hr class="hr2" id="hr">
-            <div class="col-12">
-              <h3 id="results-heading" class="header"></h3>
-              <div id="listing">
-                <table id="resultsTable">
-                  <tbody id="results"></tbody>
-                </table>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+
+  <div style="display:none">
+    <div id="info-content">
+      <table>
+        <tr id="iw-url-row" class="iw_table_row">
+          <td id="iw-icon" class="iw_table_icon"></td>
+          <td id="iw-url"></td>
+        </tr>
+        <tr id="iw-address-row" class="iw_table_row">
+          <td class="iw_attribute_name">Address:</td>
+          <td id="iw-address"></td>
+        </tr>
+        <tr id="iw-phone-row" class="iw_table_row">
+          <td class="iw_attribute_name">Telephone:</td>
+          <td id="iw-phone"></td>
+        </tr>
+        <tr id="iw-rating-row" class="iw_table_row">
+          <td class="iw_attribute_name">Rating:</td>
+          <td id="iw-rating"></td>
+        </tr>
+        <tr id="iw-website-row" class="iw_table_row">
+          <td class="iw_attribute_name">Website:</td>
+          <td id="iw-website"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 
   </div>
 
-
-
+  <!--Footer container-->
   <div class=" container-fluid footer-container">
     <section class="footer-section">
       <div class="row">
@@ -301,8 +290,10 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
+
   <!--owlcarousel-->
+
+  <script src="assets/js/owl.carousel.min.js"></script>
 
 
   <!--Google maps, weather js and main js-->
