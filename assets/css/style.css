@@ -79,6 +79,8 @@ body {
     margin-top: 10px;
 }
 
+
+
 .icon {
     height: 40px;
     width: 50px;
@@ -132,7 +134,7 @@ body {
 }
 
 .recommendations-container {
-    height: 120vh;
+    height: 80vh;
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
     align-items: center;
@@ -186,16 +188,18 @@ body {
 
 
 
-.gm-style .gm-style-iw-c{
-    background-color: rgba(0, 0, 0, 0.5)!important;
+.gm-style .gm-style-iw-c {
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.gm-style .gm-style-iw-t{
-    background-color: rgba(0, 0, 0, 0.5)!important;
+.gm-style .gm-style-iw-t {
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
-tr{
-    background-color: rgba(0, 0, 0, 0.5)!important;
+
+tr {
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
 #results-div {
     margin-top: 20px;
     justify-content: center;
@@ -203,20 +207,20 @@ tr{
     cursor: pointer;
     overflow-x: hidden;
     overflow-y: scroll;
-    display:inline-block;
-    height: 360px;
+    display: inline-block;
+    height: 300px;
     width: 380px;
-    color:white;   
+    color: white;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 
 
-#resultsTable{
+#resultsTable {
     position: relative;
-    width:380px;
-    height:300px;
-    text-align: center;      
+    width: 380px;
+    height: 300px;
+    text-align: center;
 }
 
 
@@ -324,6 +328,37 @@ i:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {}
 
+
+
+.features-container {
+    height: 60vh;
+}
+
+.recommendations-container {
+    height: 60vh;
+}
+
+.gm-style .gm-style-iw-c {
+    max-width: 300px !important;
+    width: auto;
+
+
+}
+
+.gm-style-iw-d {
+    max-width: 300px !important;
+    width: auto;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
@@ -336,21 +371,124 @@ i:hover {
     ##Screen = B/w 481px to 767px
   */
 
+
 @media (min-width: 481px) and (max-width: 767px) {}
+
+.features-container {
+    height: 140vh;
+}
+
+.recommendations-container {
+    height: 80vh;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
+
+
+
+}
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
 
+
 @media (min-width: 320px) and (max-width: 480px) {
     .features-container {
-        height: 180vh;
+        height: 220vh;
     }
+
     .recommendations-container {
+        height: 100vh;
+    }
+
+    .map-container {
         height: 160vh;
     }
+
+    #map {
+        margin-top: 5px;
+        height: 300px;
+        width: auto;
+        padding: 0 auto;
+    }
+
+    .map-controls {
+        position: relative;
+        ;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .map-selection {
+        margin-top: -15px;
+        width: 120px;
+    }
+
+    #autocomplete {
+        width: 120px;
+        margin: 10px;
+    }
+
+    #results-div {
+        margin-top: 10px;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+    }
+
+    #resultsTable {
+        position: relative;
+        width: 280px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .gm-style .gm-style-iw-c {
+        max-width: 300px !important;
+        width: auto;
+
+
+    }
+
+    .gm-style-iw-d {
+        max-width: 300px !important;
+        width: auto;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 11px;
+    }
+
+    .gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+    .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+
+    #iw-icon {
+        display: none;
+    }
+
+    .iw_attribute_name {
+        display: none !important;
+    }
+}
+
+/*desktops*/
+
+@media (min-width:1280px) {
     .map-container {
-        height: 200vh;
+        height: 150vh;
+    }
+
+    #map {
+        height: 400px;
+    }
+    .features-container {
+        height: 60vh;
     }
 }
