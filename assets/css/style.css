@@ -121,6 +121,9 @@ body {
     font-size: 60px;
 }
 
+.fas:hover{
+    color:rgb(1, 155, 197);
+}
 .fas-title {
     margin-top: 20px;
     color: black;
@@ -191,8 +194,8 @@ body {
     justify-content: center;
 }
 
-::-webkit-scrollbar {
-    display: auto;
+#resultsTable:-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
     
 }
 .scroll-color-dark {
