@@ -40,6 +40,10 @@ body {
     margin-left: 10px;
 }
 
+#mobile-contact{
+display: none;
+}
+
 /**** Main Container ****/
 
 .main-container {
@@ -86,6 +90,7 @@ body {
     width: 50px;
 }
 
+
 /****Main container text properties****/
 
 .title {
@@ -115,15 +120,13 @@ body {
     position: relative;
 }
 
-.fas {
+.fa-features {
     margin-top: 80px;
     color: #00BBF0;
     font-size: 60px;
 }
 
-.fas:hover{
-    color:rgb(1, 155, 197);
-}
+
 .fas-title {
     margin-top: 20px;
     color: black;
@@ -300,6 +303,10 @@ tr {
     
 }
 
+
+
+
+
 /****Footer settings****/
 
 .footer-container {
@@ -386,6 +393,7 @@ i:hover {
     ##Screen = B/w 481px to 767px
   */
 
+}
 
 @media (min-width: 481px) and (max-width: 767px) {}
 
@@ -430,13 +438,16 @@ i:hover {
 
     .map-controls {
         position: relative;
-        ;
+        
         margin-top: 10px;
         justify-content: center;
     }
 
     .map-selection {
         margin-top: -15px;
+        width: 120px;
+    }
+    .select-option{
         width: 120px;
     }
 
@@ -487,11 +498,20 @@ i:hover {
     .iw_attribute_name {
         display: none !important;
     }
+
+
+
+
+/**** Mobile phones XL resolution like Iphone X and Pixel 2 XL ****/
+
+@media (min-width: 812px) and (max-width: 830px) {
+   
 }
+
 
 /*desktops*/
 
-@media (min-width:1280px) {
+@media (min-width:800px) {
     .map-container {
         height: 150vh;
     }
@@ -503,4 +523,5 @@ i:hover {
     .features-container {
         height: 60vh;
     }
+ 
 }

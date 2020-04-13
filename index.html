@@ -17,6 +17,10 @@
   <!--Style CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <!--CSS Contact-->
+
+  <link rel="stylesheet" href="assets/css/contact.css">
+
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -55,13 +59,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#features">Features</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#recommendations">Recommendations</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#interactive">Map</a>
         </li>
+       
       </ul>
     </div>
   </nav>
@@ -80,8 +84,40 @@
     </div>
   </div>
 
-  <!-- Features container-->
 
+  <div id="contact-container">
+    <div id="popupContact">
+      <!-- Contact Us Form -->
+      <form action="#" id="form-contact" class="form-control" method="post" name="form">
+        <img id="close" src="assets/images/close.png" height="15" width="15" onclick="div_hide()">
+        <label class="contactTitle">Contact us</label>
+        <!-- Name -->
+        <input type="text" id="name" class="form-control mb-4" placeholder="Name" required>
+        <!-- Email -->
+        <input type="email" id="email" class="form-control mb-4" placeholder="E-mail" required>
+        <!-- Subject -->
+        <label>Subject</label>
+        <select class="custom-select mb-4 subject-option">
+          <option value="" disabled>Choose option</option>
+          <option value="1" selected>Information</option>
+          <option value="2">Feedback</option>
+        </select>
+        <div class="form-group">
+          <textarea class="form-control rounded-0" id="FormControlText" rows="5" placeholder="Message"
+            required></textarea>
+        </div>
+        <button id="submit" class="btn btn-success btn-block" type="submit">Send</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="contact-sticky">
+    <i id="popup" onclick="div_show()" class="fas fa-comment icon-mail"></i>
+  </div>
+
+
+  <!-- Features container-->
   <div id="features" class="features-container container-fluid">
     <div class="row">
       <div class="col-sm-12 title-feature">
@@ -91,25 +127,25 @@
     </div>
     <div class="row">
       <div class="col-sm-3">
-        <i class="fas fa-utensils"></i>
+        <i class="fas fa-utensils fa-features"></i>
         <p class="fas-title">Restaurants</p>
         <p>Known for its wealth of seafood, spices and olive oil, Portuguese cuisine relies heavily on the Atlantic
           Ocean and the produce grown throughout the country. </p>
       </div>
       <div class="col-sm-3">
-        <i class="fas fa-glass-martini-alt"></i>
+        <i class="fas fa-glass-martini-alt fa-features"></i>
         <p class="fas-title">Nightlife</p>
         <p>When the sun goes down the beat goes up. There are bars to suit all tastes, from chilled
           lounge bars to lively music bars that party into the early hours.</p>
       </div>
       <div class="col-sm-3">
-        <i class="fas fa-landmark"></i>
+        <i class="fas fa-landmark fa-features"></i>
         <p class="fas-title">Attractions</p>
         <p>Discover the best attractions in Portugal including Mosteiro de Santa Maria da Vitória, Mosteiro de Santa
           Maria de Alcobaça, Convento de Cristo.</p>
       </div>
       <div class="col-sm-3">
-        <i class="fas fa-hotel"></i>
+        <i class="fas fa-hotel fa-features"></i>
         <p class="fas-title">Accommodation</p>
         <p>As one of Europe’s most affordable holiday destinations, tourists can easily enjoy what Portugal has to
           offer, having accommodation to all budgets.</p>
@@ -146,7 +182,8 @@
             <img src="assets/images/attraction_pena.jpg">
             <p class="attraction-title">National Palace of Pena</p>
             <p class="attraction-description">Hilltop Romanticist palace in parkland</p>
-            <p class="attraction-description">A major expressions of 19th-century Romanticism in the world. UNESCO World
+            <p class="attraction-description">A major expressions of 19th-century Romanticism in the world. UNESCO
+              World
               Heritage Site and one of the Seven
               Wonders of Portugal.</p>
           </div>
@@ -284,6 +321,9 @@
     </div>
   </div>
 
+  <!--Contact section-->
+
+  </div>
 
 
   <!--Footer container-->
@@ -337,9 +377,11 @@
 
 
   <!--Google maps, weather js and main js-->
-  <script src="assets/js/weather.js"></script>
+  <!--<script src="assets/js/weather.js"></script>-->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
   <script src="assets/js/map.js"></script>
+
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"
