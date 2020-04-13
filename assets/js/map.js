@@ -23,6 +23,8 @@ function initMap() {
     panControl: false,
     zoomControl: false,
     streetViewControl: false,
+    fullscreenControl: false,
+
     styles: [
       {
         "elementType": "geometry",
@@ -204,7 +206,7 @@ function initMap() {
 
   autocomplete.addListener('place_changed', onPlaceChanged);
   document.getElementById('category').addEventListener('change', onPlaceChanged);
-//  $('#hr').hide();
+  $('#hr').hide();
 
 
 }
@@ -235,7 +237,7 @@ function doNearbySearch(search) {
       clearResults();
       clearMarkers();
        
-      //      $('#hr').show();
+       $('#hr').show();
       // Create a marker for each hotel found, and
       // assign a letter of the alphabetic to each marker icon.
       for (var i = 0; i < results.length; i++) {
