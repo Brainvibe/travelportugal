@@ -1,6 +1,6 @@
 //weather for Lisbon
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?id=2267057&units=metric&appid=f9527bd49f458a18800b244d4ad4e41c", function (data) {
+$.getJSON("https://brainvibe.github.io/travelportugal/http://api.openweathermap.org/data/2.5/weather?id=2267057&units=metric&appid=f9527bd49f458a18800b244d4ad4e41c", function (data) {
 
 
     var lisbon = 2267057;
