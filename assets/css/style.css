@@ -157,7 +157,12 @@ body {
     width: 20%;
 }
 
-.hotel_description {
+.attraction-title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.attraction-description {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
 }
@@ -186,7 +191,13 @@ body {
     justify-content: center;
 }
 
-
+::-webkit-scrollbar {
+    display: auto;
+    
+}
+.scroll-color-dark {
+    scrollbar-color: dark;
+  }
 
 .gm-style .gm-style-iw-c {
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -206,7 +217,7 @@ tr {
     align-items: center;
     cursor: pointer;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: inline-block;
     height: 300px;
     width: 380px;
@@ -385,11 +396,7 @@ i:hover {
 
 
 
-@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
-
-
-
-}
+@media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {}
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -488,6 +495,7 @@ i:hover {
     #map {
         height: 400px;
     }
+
     .features-container {
         height: 60vh;
     }
