@@ -1,20 +1,22 @@
 //weather for Lisbon
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://community-open-weather-map.p.rapidapi.com/weather?id=2267057&units=metric",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+		"x-rapidapi-key": "4c396de91amsh9223e6fb0da20f5p11b1a9jsne7affd5ec411"
+	}
+}
 
-$.getJSON("https://brainvibe.github.io/travelportugal/http://api.openweathermap.org/data/2.5/weather?id=2267057&units=metric&appid=f9527bd49f458a18800b244d4ad4e41c", function (data) {
+$.ajax(settings).done(function (response) {
+    console.log(response);
+    let icon = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
+    let temp = Math.floor(response.main.temp);
+    let weather = response.weather[0].main;
 
-
-    var lisbon = 2267057;
-    var porto =2735943;
-    var lagos=2267226;
-    
-    let icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-    let temp = Math.floor(data.main.temp);
-    let weather=data.weather[0].main;
-
-    $('.icon').attr('src',icon);
-    $('.weather').append(weather);
-    $('.temp').append(temp +"º");
+    $('.icon').attr('src', icon);
+    $('.temp').append(temp + "º");
+ 
 });
-
-
-
