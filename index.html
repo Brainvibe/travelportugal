@@ -22,7 +22,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_DhdVSvO47vJEvVzjgvu4l");
+    })();
+  </script>
   <title>Travel Portugal</title>
 </head>
 
@@ -84,22 +89,15 @@
   <div id="contact-container">
     <div id="popupContact">
       <!-- Contact Us Form -->
-      <form action="#" id="form-contact" class="form-control" method="post" name="form">
+      <form onsubmit="return sendEmail(this);" id="form-contact" class="form-control" name="form">
         <img id="close" src="assets/images/close.png" height="15" width="15" onclick="div_hide()">
         <label class="contactTitle">Contact us</label>
         <!-- Name -->
         <input type="text" id="name" class="form-control mb-4" placeholder="Name" required>
         <!-- Email -->
         <input type="email" id="email" class="form-control mb-4" placeholder="E-mail" required>
-        <!-- Subject -->
-        <label>Subject</label>
-        <select class="custom-select mb-4 subject-option">
-          <option value="" disabled>Choose option</option>
-          <option value="1" selected>Information</option>
-          <option value="2">Feedback</option>
-        </select>
         <div class="form-group">
-          <textarea class="form-control rounded-0" id="FormControlText" rows="5" placeholder="Message"
+          <textarea name="FormControlText" class="form-control rounded-0" id="FormControlText" rows="5" placeholder="Message"
             required></textarea>
         </div>
         <button id="submit" class="btn btn-success btn-block" type="submit">Send</button>
@@ -374,6 +372,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
   <script src="assets/js/map.js"></script>
+  <script src="assets/js/mail.js"></script>
 
 
   <script
