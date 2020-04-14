@@ -503,366 +503,9 @@ i:hover {
     color: gray;
 }
 
-/*********************************
-    
-      Media queries map section
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
-**********************************/
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .main-container {
-        height: 100vh;
-    }
-
-
-
-    .hr-title-recommendations {
-        width: 20%;
-        width: 36%;
-    }
-
-    .features-container {
-        height: 60vh;
-    }
-
-    .recommendations-container {
-        height: 80vh;
-    }
-
-    .gm-style .gm-style-iw-c {
-        max-width: 300px !important;
-        width: auto;
-
-
-    }
-
-    .gm-style-iw-d {
-        max-width: 300px !important;
-        width: auto;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-        font-size: 14px;
-    }
-
-
-
-
-
-
-    .contact-sticky {
-        top: 88%;
-        transform: translateX(-22%);
-    }
-
-
-
-
-}
-
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
-
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
-@media screen and (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {
-
-    .title {
-        font-size: 10px;
-    }
-
-    .fa-features {
-        margin: 0 auto;
-        font-size: 40px;
-    }
-
-    .features-container {
-        height: 150vh;
-    }
-
-    .title-feature>p {
-        margin-bottom: 0;
-        font-size: 25px;
-    }
-}
-
-
-
-
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-    .features-container {
-        height: 140vh;
-    }
-
-    .recommendations-container {
-        height: 80vh;
-    }
-
-}
-
-
-/* G4 Galaxy S5 360 x 640 */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-
-
-    .features-container {
-        height: 240vh;
-    }
-
-    .recommendations-container {
-        height: 110vh;
-    }
-
-    div#popupContact {
-        left: 7%;
-    }
-
-    #map {
-        margin-top: 5px;
-        height: 300px;
-        width: auto;
-        padding: 0 auto;
-    }
-
-    .map-container {
-        height: 160vh;
-    }
-
-    .map-controls {
-        position: relative;
-
-        margin-top: 10px;
-        justify-content: center;
-    }
-
-    .map-selection {
-        margin-top: -15px;
-        width: 120px;
-    }
-
-    .select-option {
-        width: 150px;
-    }
-
-    #autocomplete {
-        width: 150px;
-        margin: 10px;
-        margin-left: -24px;
-    }
-
-    #category {
-        margin-left: -4px;
-    }
-
-    #results-div {
-        margin-top: 10px;
-        display: inline-block;
-        height: 300px;
-        width: 300px;
-    }
-
-    #resultsTable {
-        position: relative;
-        width: 280px;
-        height: 300px;
-        text-align: center;
-    }
-
-    .gm-style .gm-style-iw-c {
-        max-width: 300px !important;
-        width: auto;
-    }
-
-    .gm-style-iw-d {
-        max-width: 300px !important;
-        width: auto;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-        font-size: 11px;
-    }
-
-
-    #iw-icon {
-        display: none;
-    }
-
-    .iw_attribute_name {
-        display: none !important;
-    }
-
-    .icon-mail {
-        font-size: 25px;
-    }
-
-    .contact-sticky {
-
-        top: 85%;
-        right: 1%;
-        -webkit-transform: translateX(-2%);
-        -ms-transform: translateX(-2%);
-        transform: translateX(-2%);
-        z-index: 4;
-    }
-}
-
-
-/* ----------- iPhone 5, 5S, 5C and 5SE  Portrait----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-    .title {
-        font-size: 30px;
-    }
-
-    .hr-title {
-
-        width: 65%;
-    }
-
-    .hr-title-recommendations {
-
-        width: 73%;
-    }
-
-    div#popupContact {
-        left: 57%;
-        width: 82%;
-    }
-
-    #submit {
-        width: 100%;
-    }
-
-    .fa-features {
-        margin: 0 auto;
-        font-size: 40px;
-    }
-
-    .features-container {
-        height: 180vh;
-    }
-
-    .title-feature>p {
-        margin-bottom: 0;
-        font-size: 19px;
-        font-weight: bold;
-
-    }
-
-    .recommendations-container {
-        height: 120vh;
-    }
-
-    .map-container {
-        height: 160vh;
-    }
-
-    #map {
-        margin-top: 5px;
-        height: 300px;
-        width: auto;
-        padding: 0 auto;
-    }
-
-    .map-controls {
-        position: relative;
-
-        margin-top: 10px;
-        justify-content: center;
-    }
-
-    .map-selection {
-        margin-top: -15px;
-        width: 100px;
-    }
-
-    .select-option {
-        width: 136px;
-    }
-
-    #autocomplete {
-        width: 150px;
-        margin: 10px;
-        margin-left: -24px;
-    }
-
-    #category {
-        margin-left: -4px;
-    }
-
-    #results-div {
-        margin-top: 10px;
-        display: inline-block;
-        height: 300px;
-        width: 300px;
-    }
-
-    #resultsTable {
-        position: relative;
-        width: 280px;
-        height: 300px;
-        text-align: center;
-    }
-
-    .gm-style .gm-style-iw-c {
-        max-width: 300px !important;
-        width: auto;
-    }
-
-    .gm-style-iw-d {
-        max-width: 300px !important;
-        width: auto;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-        font-size: 11px;
-    }
-
-
-
-    #iw-icon {
-        display: none;
-    }
-
-    .iw_attribute_name {
-        display: none !important;
-    }
-
-    .icon-mail {
-        font-size: 25px;
-    }
-
-    .contact-sticky {
-
-        top: 85%;
-        right: 1%;
-        -webkit-transform: translateX(-2%);
-        -ms-transform: translateX(-2%);
-        transform: translateX(-2%);
-        z-index: 4;
-    }
-}
-
-
-/**** iPhone 5, 5S, 5C and 5SE  Landscape****/
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     /***Main section ****/
 
     .title {
@@ -870,14 +513,14 @@ i:hover {
     }
 
     .hr-title {
-        width: 53%;
+        width: 56%;
     }
 
     /***feature ***/
 
     .title-feature {
         margin-bottom: 0;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .fa-features {
@@ -886,13 +529,13 @@ i:hover {
     }
 
     .features-container {
-        height: 240vh;
+        height: 180vh;
     }
 
     /***recommendations ****/
 
     .recommendations-container {
-        height: 240vh;
+        height: 130vh;
     }
 
     /***contact****/
@@ -912,7 +555,7 @@ i:hover {
 
     /****map ***/
     .map-container {
-        height: 400vh;
+        height: 180vh;
     }
 
     #map {
@@ -986,124 +629,61 @@ i:hover {
 
 }
 
-/****** iPhone 6, 7 and 8 Portrait *****/
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
     .title {
-        font-size: 40px;
+        font-size: 50px;
     }
 
-    .features-container {
-        height: 150vh;
-    }
-
-    .recommendations-container {
-        height: 105vh;
-    }
-
-    .map-container {
-        height: 140vh;
-    }
-
-    div#popupContact {
-        left: 50%;
-
-    }
-}
-
-/****** iPhone 6, 7 and 8 Landscape *****/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .title {
-        margin-top: 40px;
-        font-size: 30px;
-    }
-
-    .features-container {
-        height: 160vh;
-    }
-
-    .recommendations-container {
-        height: 190vh;
-    }
-
-    .map-container {
-        height: 220vh;
-    }
-    #map {
-        margin-top: 10px;
-        height: 250px;
-    }
-
-    div#popupContact {
-        left: 50%;
-
-    }
-
-    .contact-sticky {
-
-        top: 85%;
-        right: 1%;
-        -webkit-transform: translateX(-2%);
-        -ms-transform: translateX(-2%);
-        transform: translateX(-2%);
-        z-index: 4;
-    }
-
-    .icon-mail {
-        font-size: 30px;
-    }
-
-
-}
-
-/**** Mobile phones XL resolution like Iphone X and Pixel 2 XL ****/
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-
-
-
-    .map-container {
-        height: 120vh;
-    }
-
-    .features-container {
-        height: 120vh;
-    }
-
-    .recommendations-container {
-        height: 90vh;
-    }
-
-    div#popupContact {
-        left: %;
-
-    }
-}
-}
-
-
-/*desktops*/
-
-@media only screen and (min-width:1440px) {
-    .map-container {
-        height: 120vh;
-    }
-
-    #map {
-        height: 400px;
+    .title-feature {
+        font-size: 28px;
     }
 
     .features-container {
         height: 60vh;
     }
 
+    .recommendations-container {
+        height: 70vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .features-container {
+        height: 60vh;
+    }
+
+    .recommendations-container {
+        height: 75vh;
+    }
 
 }
 
-@media only screen and (min-device-width : 1280px) and (max-device-width : 1440px) {
-    .features-container {
-        height: 80vh;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .features-container{
+        height:40vh;
+    }
+    .recommendations-container{
+        height:60vh;
+    }
+    .map-container{
+        height:100vh;
     }
 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /****change a little bit the table margin ****/
     .recommendations-container {
         height: 100vh;
     }
@@ -1111,16 +691,11 @@ i:hover {
     .map-container {
         height: 140vh;
     }
-
-    #map {
-        height: 300px;
-    }
-
 }
 
-/* Galaxy s5 S9 moto g4 (360x640)*/
-/*pixel 2 411x731*/
-/*iphone plus 414x736*/
+@media only screen and (min-width: 1440px) {
 
-
-/* ipad pro */
+    .recommendations-container{
+        height:80vh;
+    }
+}
