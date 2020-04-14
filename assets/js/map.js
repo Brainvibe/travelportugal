@@ -1,7 +1,9 @@
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
-var countryRestrict = { 'country': 'pt' };
+var countryRestrict = {
+  'country': 'pt'
+};
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
@@ -9,7 +11,10 @@ var countries = {
 
 
   'pt': {
-    center: { lat: 39.4, lng: -8.2 },
+    center: {
+      lat: 39.4,
+      lng: -8.2
+    },
     zoom: 7
   },
 
@@ -25,165 +30,128 @@ function initMap() {
     streetViewControl: false,
     fullscreenControl: false,
 
-    styles: [
-      {
+    styles: [{
         "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#242f3e"
-          }
-        ]
+        "stylers": [{
+          "color": "#242f3e"
+        }]
       },
       {
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#746855"
-          }
-        ]
+        "stylers": [{
+          "color": "#746855"
+        }]
       },
       {
         "elementType": "labels.text.stroke",
-        "stylers": [
-          {
-            "color": "#242f3e"
-          }
-        ]
+        "stylers": [{
+          "color": "#242f3e"
+        }]
       },
       {
         "featureType": "administrative.locality",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#d59563"
-          }
-        ]
+        "stylers": [{
+          "color": "#d59563"
+        }]
       },
       {
         "featureType": "poi",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#d59563"
-          }
-        ]
+        "stylers": [{
+          "color": "#d59563"
+        }]
       },
       {
         "featureType": "poi.park",
         "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#263c3f"
-          }
-        ]
+        "stylers": [{
+          "color": "#263c3f"
+        }]
       },
       {
         "featureType": "poi.park",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#6b9a76"
-          }
-        ]
+        "stylers": [{
+          "color": "#6b9a76"
+        }]
       },
       {
         "featureType": "road",
         "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#38414e"
-          }
-        ]
+        "stylers": [{
+          "color": "#38414e"
+        }]
       },
       {
         "featureType": "road",
         "elementType": "geometry.stroke",
-        "stylers": [
-          {
-            "color": "#212a37"
-          }
-        ]
+        "stylers": [{
+          "color": "#212a37"
+        }]
       },
       {
         "featureType": "road",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#9ca5b3"
-          }
-        ]
+        "stylers": [{
+          "color": "#9ca5b3"
+        }]
       },
       {
         "featureType": "road.highway",
         "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#746855"
-          }
-        ]
+        "stylers": [{
+          "color": "#746855"
+        }]
       },
       {
         "featureType": "road.highway",
         "elementType": "geometry.stroke",
-        "stylers": [
-          {
-            "color": "#1f2835"
-          }
-        ]
+        "stylers": [{
+          "color": "#1f2835"
+        }]
       },
       {
         "featureType": "road.highway",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#f3d19c"
-          }
-        ]
+        "stylers": [{
+          "color": "#f3d19c"
+        }]
       },
       {
         "featureType": "transit",
         "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#2f3948"
-          }
-        ]
+        "stylers": [{
+          "color": "#2f3948"
+        }]
       },
       {
         "featureType": "transit.station",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#d59563"
-          }
-        ]
+        "stylers": [{
+          "color": "#d59563"
+        }]
       },
       {
         "featureType": "water",
         "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#17263c"
-          }
-        ]
+        "stylers": [{
+          "color": "#17263c"
+        }]
       },
       {
         "featureType": "water",
         "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#515c6d"
-          }
-        ]
+        "stylers": [{
+          "color": "#515c6d"
+        }]
       },
       {
         "featureType": "water",
         "elementType": "labels.text.stroke",
-        "stylers": [
-          {
-            "color": "#17263c"
-          }
-        ]
+        "stylers": [{
+          "color": "#17263c"
+        }]
       }
     ]
 
@@ -196,11 +164,12 @@ function initMap() {
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".
   autocomplete = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */(
+    /** @type {!HTMLInputElement} */
+    (
       document.getElementById('autocomplete')), {
-    types: ['(cities)'],
-    componentRestrictions: countryRestrict
-  });
+      types: ['(cities)'],
+      componentRestrictions: countryRestrict
+    });
 
   places = new google.maps.places.PlacesService(map);
 
@@ -227,6 +196,66 @@ function onPlaceChanged() {
     } else {
       document.getElementById('autocomplete').placeholder = 'Enter a city';
     }
+  } else if ($("#attraction").is(':selected')) {
+    if (place.geometry) {
+      map.panTo(place.geometry.location);
+      map.setZoom(13);
+      search = {
+        bounds: map.getBounds(),
+        types: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
+      };
+      doNearbySearch(search);
+    } else {
+      $('#autocomplete').attr("placeholder", "Enter a town or city");
+    }
+  } else if ($("#park").is(':selected')) {
+    if (place.geometry) {
+      map.panTo(place.geometry.location);
+      map.setZoom(13);
+      search = {
+        bounds: map.getBounds(),
+        types: ['park']
+      };
+      doNearbySearch(search);
+    } else {
+      $('#autocomplete').attr("placeholder", "Enter a city");
+    }
+  } else if ($("#food").is(':selected')) {
+    if (place.geometry) {
+      map.panTo(place.geometry.location);
+      map.setZoom(13);
+      search = {
+        bounds: map.getBounds(),
+        types: ['cafe', 'restaurant', 'bakery']
+      };
+      doNearbySearch(search);
+    } else {
+      $('#autocomplete').attr("placeholder", "Enter a city");
+    }
+  } else if ($("#drink").is(':selected')) {
+    if (place.geometry) {
+      map.panTo(place.geometry.location);
+      map.setZoom(13);
+      search = {
+        bounds: map.getBounds(),
+        types: ['bar']
+      };
+      doNearbySearch(search);
+    } else {
+      $('#autocomplete').attr("placeholder", "Enter a city");
+    }
+  } else if ($("#club").is(':selected')) {
+    if (place.geometry) {
+      map.panTo(place.geometry.location);
+      map.setZoom(13);
+      search = {
+        bounds: map.getBounds(),
+        types: ['night_club']
+      };
+      doNearbySearch(search);
+    } else {
+      $('#autocomplete').attr("placeholder", "Enter a city");
+    }
   }
 }
 // Search for hotels in the selected city, within the viewport of the map.
@@ -236,8 +265,8 @@ function doNearbySearch(search) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
-       
-       $('#hr').show();
+
+      $('#hr').show();
       // Create a marker for each hotel found, and
       // assign a letter of the alphabetic to each marker icon.
       for (var i = 0; i < results.length; i++) {
@@ -276,11 +305,18 @@ function clearMarkers() {
 function setAutocompleteCountry() {
   var country = document.getElementById('country').value;
   if (country == 'all') {
-    autocomplete.setComponentRestrictions({ 'country': [] });
-    map.setCenter({ lat: 15, lng: 0 });
+    autocomplete.setComponentRestrictions({
+      'country': []
+    });
+    map.setCenter({
+      lat: 15,
+      lng: 0
+    });
     map.setZoom(2);
   } else {
-    autocomplete.setComponentRestrictions({ 'country': country });
+    autocomplete.setComponentRestrictions({
+      'country': country
+    });
     map.setCenter(countries[country].center);
     map.setZoom(countries[country].zoom);
   }
@@ -330,7 +366,9 @@ function clearResults() {
 // anchored on the marker for the hotel that the user selected.
 function showInfoWindow() {
   var marker = this;
-  places.getDetails({ placeId: marker.placeResult.place_id },
+  places.getDetails({
+      placeId: marker.placeResult.place_id
+    },
     function (place, status) {
       if (status !== google.maps.places.PlacesServiceStatus.OK) {
         return;
