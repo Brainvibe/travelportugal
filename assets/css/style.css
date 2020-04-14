@@ -504,7 +504,131 @@ i:hover {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 600px) and (orientation:landscape) {
+    .title {
+        font-size: 30px;
+    }
+
+    .hr-title {
+        width: 56%;
+    }
+
+    /***feature ***/
+
+    .title-feature {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .fa-features {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    .features-container {
+        height: 280vh;
+    }
+
+    /***recommendations ****/
+
+    .recommendations-container {
+        height: 230vh;
+    }
+
+    /***contact****/
+    .icon-mail {
+        font-size: 25px;
+    }
+
+    .contact-sticky {
+
+        top: 85%;
+        right: 1%;
+        -webkit-transform: translateX(-2%);
+        -ms-transform: translateX(-2%);
+        transform: translateX(-2%);
+        z-index: 4;
+    }
+
+    /****map ***/
+    .map-container {
+        height: 240vh;
+    }
+
+    #map {
+        margin-top: 5px;
+        height: 200px;
+        width: auto;
+        padding: 0 auto;
+    }
+
+    .map-controls {
+        position: relative;
+
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .map-selection {
+        margin-top: -15px;
+        width: 100px;
+    }
+
+    .select-option {
+        width: 136px;
+    }
+
+    #autocomplete {
+        width: 150px;
+        margin: 10px;
+        margin-left: -24px;
+    }
+
+    #category {
+        margin-left: -4px;
+    }
+
+    #results-div {
+        margin-top: 10px;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+    }
+
+    #resultsTable {
+        position: relative;
+        width: 280px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .gm-style .gm-style-iw-c {
+        max-width: 300px !important;
+        width: auto;
+    }
+
+    .gm-style-iw-d {
+        max-width: 300px !important;
+        width: auto;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 11px;
+    }
+
+    #iw-icon {
+        display: none;
+    }
+
+    .iw_attribute_name {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation:portrait) {
 
     /***Main section ****/
 
@@ -632,7 +756,7 @@ i:hover {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (orientation:portrait) {
 
 
     .title {
@@ -652,8 +776,56 @@ i:hover {
     }
 }
 
+@media only screen and (min-width: 600px) and (orientation:landscape) {
+    .title {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .features-container {
+        height: 200vh;
+    }
+
+    .recommendations-container {
+        height: 200vh !important;
+    }
+
+    .map-container {
+        height: 280vh;
+    }
+
+    #map {
+        margin-top: 10px;
+        height: 250px;
+    }
+}
+
+/**** Mobile phones XL resolution like Iphone X and Pixel 2 XL ****/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+
+
+    .map-container {
+        height: 100vh;
+    }
+
+    .features-container {
+        height: 130vh;
+    }
+
+    .recommendations-container {
+        height: 90vh;
+    }
+
+    div#popupContact {
+        left: %;
+
+    }
+}
+
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation:portrait) {
 
     .features-container {
         height: 60vh;
@@ -665,17 +837,47 @@ i:hover {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) and (orientation:landscape) {
 
-    .features-container{
-        height:40vh;
+    .features-container {
+        height: 180vh !important;
     }
-    .recommendations-container{
-        height:60vh;
+
+    .recommendations-container {
+        height: 75vh;
     }
-    .map-container{
-        height:100vh;
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (orientation:portrait) {
+
+    .features-container {
+        height: 40vh;
+    }
+
+    .recommendations-container {
+        height: 60vh;
+    }
+
+    .map-container {
+        height: 100vh;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (orientation:landscape) {
+
+    .features-container {
+        height: 80vh!important;
+    }
+
+    .recommendations-container {
+        height: 100vh!important;
+    }
+
+    .map-container {
+        height: 120vh;
     }
 
 }
@@ -695,7 +897,7 @@ i:hover {
 
 @media only screen and (min-width: 1440px) {
 
-    .recommendations-container{
-        height:80vh;
+    .recommendations-container {
+        height: 80vh;
     }
 }
