@@ -11,7 +11,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/**** Navbar properties ****/
+/**********************************
+ 
+       Navbar properties
+
+**********************************/
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
@@ -40,12 +44,13 @@ body {
     margin-left: 10px;
 }
 
-#mobile-contact{
-display: none;
-}
 
-/**** Main Container ****/
 
+/**********************************
+ 
+        Main container
+
+**********************************/
 .main-container {
     height: 100vh;
     background: url('../images/main-algarve.jpg') no-repeat center center fixed;
@@ -61,38 +66,6 @@ display: none;
     color: white;
 }
 
-/*Opaque overlay in main container*/
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/***weather settings***/
-
-.weather-container {
-    position: absolute;
-    color: white;
-    right: 100px;
-    font-size: 12px;
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 10px;
-}
-
-
-
-.icon {
-    height: 40px;
-    width: 50px;
-}
-
-
-/****Main container text properties****/
-
 .title {
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
@@ -105,10 +78,153 @@ display: none;
 
 .hr-title {
     border-top: 1px solid rgb(255, 250, 250);
-    width: 20%;
+    width: 35%;
 }
 
-/**** Features container ****/
+
+/*Opaque overlay in main container*/
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**********************************
+ 
+     Weather container settings
+
+**********************************/
+
+.weather-container {
+    position: absolute;
+    color: white;
+    right: 100px;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+}
+
+/* image size for the weather*/
+
+.icon {
+    height: 40px;
+    width: 50px;
+}
+
+
+/*********************************
+         Contact section
+
+**********************************/
+
+/***contact icon sticky ***/
+.contact-sticky {
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-100%);
+    z-index: 4;
+}
+
+/**** Contact body ****/
+
+#form-contact {
+    background-color: transparent;
+    border: none;
+}
+
+/*** contact form title ***/
+.contactTitle {
+    font-size: 25px;
+    color: white;
+
+}
+
+/*** Submit button ***/
+
+#submit {
+    width: 300px;
+}
+
+.btn-success {
+    background-color: #00BBF0;
+    border: none;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: rgb(6, 139, 175);
+}
+
+.btn-success:active {
+    background: #00BBF0 !important;
+    outline: none;
+
+}
+
+/**** form properties ****/
+
+.form-contact {
+    width: 200px;
+    resize: none;
+}
+
+.form-wrapper {
+    background-color: transparent;
+}
+
+#contact-container {
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    background-color: #313131;
+    overflow: auto;
+    z-index: 4;
+    color: white;
+}
+
+/*** img close ***/
+
+img#close {
+    position: absolute;
+    right: 14px;
+    top: 18px;
+    cursor: pointer
+}
+
+div#popupContact {
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    margin-left: -150px;
+
+}
+
+.icon-mail {
+    font-size: 40px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-mail:hover {
+    color: white;
+}
+
+
+/*********************************
+         Features section
+
+**********************************/
 
 .features-container {
     height: 60vh;
@@ -120,12 +236,15 @@ display: none;
     position: relative;
 }
 
+/*** font awesome color ***/
+
 .fa-features {
     margin-top: 80px;
     color: #00BBF0;
     font-size: 60px;
 }
 
+/*** title ***/
 
 .fas-title {
     margin-top: 20px;
@@ -138,6 +257,14 @@ display: none;
     font-size: 30px;
     margin-bottom: 20px;
 }
+
+/*********************************
+    
+      Recommendations section
+
+**********************************/
+
+
 
 .recommendations-container {
     height: 80vh;
@@ -163,7 +290,7 @@ display: none;
     width: 20%;
 }
 
-.attraction-title{
+.attraction-title {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
 }
@@ -173,7 +300,30 @@ display: none;
     font-size: 15px;
 }
 
-/****Map container ***/
+
+.owl-prev>span:nth-child(1) {
+    display: inline-block;
+    font-size: 50px;
+    width: 10px;
+}
+
+.owl-next>span:nth-child(1) {
+    display: inline-block;
+    font-size: 50px;
+    width: 10px;
+}
+
+.owl-dots {
+    visibility: hidden;
+}
+
+
+/*********************************
+    
+      Interactive map section
+
+**********************************/
+
 
 .map-container {
     height: 100vh;
@@ -199,11 +349,11 @@ display: none;
 
 #resultsTable:-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
-    
+
 }
-.scroll-color-dark {
-    scrollbar-color: dark;
-  }
+
+
+/*** table colors ***/
 
 .gm-style .gm-style-iw-c {
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -216,6 +366,14 @@ display: none;
 tr {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+
+/*** table div settings ***/
 
 #results-div {
     margin-top: 20px;
@@ -231,7 +389,7 @@ tr {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-
+/*** table porperties ***/
 
 #resultsTable {
     position: relative;
@@ -251,6 +409,7 @@ tr {
 
 #category {
     align-items: center;
+    margin-left: 8px;
 }
 
 /* map settings*/
@@ -300,14 +459,17 @@ tr {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
-    
+
 }
 
 
 
 
+/*********************************
+    
+          Footer section
 
-/****Footer settings****/
+**********************************/
 
 .footer-container {
     background: black;
@@ -341,44 +503,67 @@ i:hover {
     color: gray;
 }
 
-/****Media Queries ****/
+/*********************************
+    
+      Media queries map section
+
+**********************************/
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .main-container {
+        height: 100vh;
+    }
 
 
 
-.features-container {
-    height: 60vh;
-}
+    .hr-title-recommendations {
+        width: 20%;
+        width: 36%;
+    }
 
-.recommendations-container {
-    height: 60vh;
-}
+    .features-container {
+        height: 60vh;
+    }
 
-.gm-style .gm-style-iw-c {
-    max-width: 300px !important;
-    width: auto;
+    .recommendations-container {
+        height: 80vh;
+    }
+
+    .gm-style .gm-style-iw-c {
+        max-width: 300px !important;
+        width: auto;
 
 
-}
+    }
 
-.gm-style-iw-d {
-    max-width: 300px !important;
-    width: auto;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 14px;
-}
+    .gm-style-iw-d {
+        max-width: 300px !important;
+        width: auto;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 14px;
+    }
 
-.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
-.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
-    background: transparent;
+
+
+
+
+
+    .contact-sticky {
+        top: 88%;
+        transform: translateX(-22%);
+    }
+
+
+
+
 }
 
 /* 
@@ -393,40 +578,40 @@ i:hover {
     ##Screen = B/w 481px to 767px
   */
 
-}
-
-@media (min-width: 481px) and (max-width: 767px) {}
-
-.features-container {
-    height: 140vh;
-}
-
-.recommendations-container {
-    height: 80vh;
-}
-
-
-
-
 @media (min-width: 320px) and (max-width: 480px) and (orientation:landscape) {}
 
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
     .features-container {
-        height: 220vh;
+        height: 140vh;
     }
 
     .recommendations-container {
-        height: 100vh;
+        height: 80vh;
     }
 
-    .map-container {
-        height: 160vh;
+}
+
+
+/* G4 Galaxy S5 360 x 640 */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+
+
+
+    .features-container {
+        height: 240vh;
+    }
+
+    .recommendations-container {
+        height: 110vh;
+    }
+
+    div#popupContact {
+        left: 47%;
     }
 
     #map {
@@ -436,9 +621,13 @@ i:hover {
         padding: 0 auto;
     }
 
+    .map-container {
+        height: 160vh;
+    }
+
     .map-controls {
         position: relative;
-        
+
         margin-top: 10px;
         justify-content: center;
     }
@@ -447,13 +636,19 @@ i:hover {
         margin-top: -15px;
         width: 120px;
     }
-    .select-option{
-        width: 120px;
+
+    .select-option {
+        width: 150px;
     }
 
     #autocomplete {
-        width: 120px;
+        width: 150px;
         margin: 10px;
+        margin-left: -24px;
+    }
+
+    #category {
+        margin-left: -4px;
     }
 
     #results-div {
@@ -473,8 +668,6 @@ i:hover {
     .gm-style .gm-style-iw-c {
         max-width: 300px !important;
         width: auto;
-
-
     }
 
     .gm-style-iw-d {
@@ -486,10 +679,6 @@ i:hover {
         font-size: 11px;
     }
 
-    .gm-style .gm-style-iw-d::-webkit-scrollbar-track,
-    .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
-        background: transparent;
-    }
 
     #iw-icon {
         display: none;
@@ -499,21 +688,172 @@ i:hover {
         display: none !important;
     }
 
+    .icon-mail {
+        font-size: 25px;
+    }
+
+    .contact-sticky {
+
+        top: 85%;
+        right: 1%;
+        -webkit-transform: translateX(-2%);
+        -ms-transform: translateX(-2%);
+        transform: translateX(-2%);
+        z-index: 4;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .features-container {
+        height: 300vh;
+    }
+
+}
+
+/* 
+   Devices from 320px to 478px
+  */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    .hr-title {
+
+        width: 65%;
+    }
+
+    .hr-title-recommendations {
+
+        width: 73%;
+    }
+
+    div#popupContact {
+        left: 47%;
+    }
+
+    .features-container {
+        height: 220vh;
+    }
+
+    .recommendations-container {
+        height: 110vh;
+    }
+
+    .map-container {
+        height: 160vh;
+    }
+
+    #map {
+        margin-top: 5px;
+        height: 300px;
+        width: auto;
+        padding: 0 auto;
+    }
+
+    .map-controls {
+        position: relative;
+
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .map-selection {
+        margin-top: -15px;
+        width: 120px;
+    }
+
+    .select-option {
+        width: 150px;
+    }
+
+    #autocomplete {
+        width: 150px;
+        margin: 10px;
+        margin-left: -24px;
+    }
+
+    #category {
+        margin-left: -4px;
+    }
+
+    #results-div {
+        margin-top: 10px;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+    }
+
+    #resultsTable {
+        position: relative;
+        width: 280px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .gm-style .gm-style-iw-c {
+        max-width: 300px !important;
+        width: auto;
+    }
+
+    .gm-style-iw-d {
+        max-width: 300px !important;
+        width: auto;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 11px;
+    }
+
+   
+
+    #iw-icon {
+        display: none;
+    }
+
+    .iw_attribute_name {
+        display: none !important;
+    }
+
+    .icon-mail {
+        font-size: 25px;
+    }
+
+    .contact-sticky {
+
+        top: 85%;
+        right: 1%;
+        -webkit-transform: translateX(-2%);
+        -ms-transform: translateX(-2%);
+        transform: translateX(-2%);
+        z-index: 4;
+    }
+}
+
 
 
 
 /**** Mobile phones XL resolution like Iphone X and Pixel 2 XL ****/
 
-@media (min-width: 812px) and (max-width: 830px) {
-   
+@media only screen and (min-device-width : 812px) and (max-device-width : 830px) {
+
+
+    .map-container {
+        height: 120vh;
+    }
+
+    .recommendations-container {
+        height: 90vh;
+    }
+
+
 }
 
 
 /*desktops*/
 
-@media (min-width:800px) {
+@media only screen and (min-width:1440px) {
     .map-container {
-        height: 150vh;
+        height: 120vh;
     }
 
     #map {
@@ -523,5 +863,27 @@ i:hover {
     .features-container {
         height: 60vh;
     }
- 
+
+
 }
+
+@media only screen and (min-device-width : 1280px) and (max-device-width : 1440px) {
+    .features-container {
+        height: 80vh;
+    }
+
+    .recommendations-container {
+        height: 100vh;
+    }
+
+    .map-container {
+        height: 140vh;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+}
+
+/* Iphone 5 Galaxy s5*/
