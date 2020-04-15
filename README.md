@@ -151,7 +151,7 @@ How To Run This Project Locally
     Copy the URL to the repository.
     Open the terminal in your local IDE.
     Choose the working directory where you would like to have the cloned repository.
-    Type git clone, and add the URL you copied from Github: git clone https://github.com/brainvibe/travel-portugal.git .
+    Type git clone, and add the URL you copied from Github: git clone https://github.com/brainvibe/travelportugal.git .
     Press Enter and your local clone will be created.
 
 
