@@ -139,7 +139,7 @@ Travel Portugal is a one page application designed to help users plan their next
             - The score is now 93%.
 
         - Performance 
-            - Images were in .jpg and it was advised to use next gen image format like webp. Converted all image files to webp using [WebP Converter](https://webp-converter.com/). Images were too big and therefore causing loading times to increase, after converting the files to Webp, I used the image compression feature from [ResizeImage](https://resizeimage.net/). The score is now 81%.
+            - Images were too big and therefore causing loading times to increase, I used the image compression feature from [ResizeImage](https://resizeimage.net/). The score is now 81%.
 
         
         
