@@ -49,9 +49,9 @@ Travel Portugal is a one page application designed to help users plan their next
     - Provides a simple way to contact Travel Portugal with a single click. It will show a simple form where the user can submit-request for information. User can close the form, and return to the page and keep browsing. EmailJS was used for the email send functionality.
 - Footer - Provides links to the relevant social websites.
 ## Wireframes
-- [Desktop]()
-- [Mobile]()
-- [Tablet]()
+- [Desktop](https://github.com/Brainvibe/travelportugal/blob/master/wireframes/desktop.png)
+- [Mobile](https://github.com/Brainvibe/travelportugal/blob/master/wireframes/mobile.png)
+- [Tablet](https://github.com/Brainvibe/travelportugal/blob/master/wireframes/tablet.png)
 
 
 ## Technologies Used
