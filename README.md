@@ -105,6 +105,7 @@ Travel Portugal is a one page application designed to help users plan their next
     - No errors, all links working properly. Only two links were not able to be tested by the tool. Here's the console log:
 
     
+
             info Line: 333 https://www.facebook.com/
             Status: (N/A) Forbidden by robots.txt
             The link was not checked due to robots exclusion rules. Check the link manually. 
@@ -138,43 +139,50 @@ Travel Portugal is a one page application designed to help users plan their next
             - The score is now 93%.
 
         - Performance 
-            - Images were in .jpg and it was advised to use next gen image format like webp. Converted all image files to webp using [WebP Converter](https://webp-converter.com/). Images were too big and therefore causing load times to increase, after converting the files to Webp, I used the image compression feature from [ResizeImage](https://resizeimage.net/). 
+            - Images were in .jpg and it was advised to use next gen image format like webp. Converted all image files to webp using [WebP Converter](https://webp-converter.com/). Images were too big and therefore causing loading times to increase, after converting the files to Webp, I used the image compression feature from [ResizeImage](https://resizeimage.net/). The score is now 81%.
+
+        
+        
             
+
 * **Non-automated testing:**
 
     - Links:
 
-        - Checked all links especially the footer social icons, to make sure they were   opening on a new tab correctly.
+        - Checked all links especially the footer social icons, to make sure they were opening on a new tab correctly.
 
     - Contact form:
-        - Go to the "Contact Us" page
 
-        - Tried to submit the empty form and verify that an error message about the required fields appears
+         - Tried to submit the empty form and verify that an error message about the required fields appears
 
         - Tried to submit the form with an invalid email address and verify that a relevant error message appears
 
-        - Tried to submit the form with all inputs valid and verify that a success message appears with alert message.
+        - Tried to submit the form with all inputs valid and verify that a success message appears with a alert message.
 
-  
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+    - Carousel
+        - Tested all buttons and dragging through different sections with no visibile errors in the console or on its function.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+    - Map search
+
+        - Input city - Searched for cities outside Portugal, to test if the country restriction was working.
+        - Tested all different categories in the dropdown menus, while checking the console for any additional errors. 
+        - Tested autocomplete by typing the first letters or any city from Portugal.
 
 * **Tested Devices**
-
-  + One Plus 7 pro
-  + Fire HD 10
-  + Ipad
-  + Iphone 11
-  + Macbook Pro 13"
-  + Windows Desktop
+    - Apart from using the dev tools to see if the site was responsive across different resolutions I've tested all features on the following devices:
+        + One Plus 7 pro
+        + Fire HD 10
+        + Ipad
+        + Iphone 11
+        + Macbook Pro 13"
+        + Windows Desktop
 
 * **Browsers**
-
-  + Edge
-  + Chrome
-  + Firefox
-  + Safari
+    - To ensure browser compatibility I've tested all features above on the following browsers:
+        + Edge
+        + Chrome
+        + Firefox
+        + Safari
 
   
 
@@ -208,6 +216,7 @@ How To Run This Project Locally
 ### Media
 
 * Recommendation section Photos were download from [Google Travel](https://www.google.com/travel)
+* Main photos were downloaded from [Pexels](https://www.pexels.com/)
 
 ### Acknowledgements
 
