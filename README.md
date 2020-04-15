@@ -110,7 +110,13 @@ Travel Portugal is a one page application designed to help users plan their next
   - CSS Validation service 
     - Warnings regarding Bootstrap and unknown vendor extensions. 
     - Detected unused classes. Removed and fixed. 
-
+- **JSHint**
+    - showed two errors with map.js:
+            
+            25	['pt'] is better written in dot notation.
+            26	['pt'] is better written in dot notation.
+    - changed and fixed the notation.
+    
 - **Google Audits** - Audit report [here]().
 
 - **Tested Devices**
