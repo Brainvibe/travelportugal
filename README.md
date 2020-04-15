@@ -93,11 +93,25 @@ Travel Portugal is a one page application designed to help users plan their next
 ## Testing
 
 - **W3C Validation Services**
-  - Markup Validation Service - It detected some minor errors that were easily fixed.
-  - Link Checker - No errors, all links working properly.
-  - CSS Validation service - Only warnings and errors regarding Bootstrap and unknown vendor extensions.
+  - Markup Validation Service 
+    - It detected unused divs and alt="" missing from images tag. It was fixed.
+  - W3C Link Checker 
+    - No errors, all links working properly. Only two links were not able to be tested by the tool. Here's the console log:
+    
+            info Line: 333 https://www.facebook.com/
+            Status: (N/A) Forbidden by robots.txt
+            The link was not checked due to robots exclusion rules. Check the link manually. 
+           
+            info Line: 338 https://www.twitter.com/
+            Status: (N/A) Forbidden by robots.txt
+            The link was not checked due to robots exclusion rules. Check the link manually. 
+    - Both links were tested manually and working.
 
-- **Google Audits** - Audit report here
+  - CSS Validation service 
+    - Warnings regarding Bootstrap and unknown vendor extensions. 
+    - Detected unused classes. Removed and fixed. 
+
+- **Google Audits** - Audit report [here]().
 
 - **Tested Devices**
 
@@ -117,7 +131,6 @@ Travel Portugal is a one page application designed to help users plan their next
 
 
 **Non-automated testing:**
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Contact form:
     1. Go to the "Contact Us" page
@@ -125,11 +138,12 @@ For any scenarios that have not been automated, test the user stories manually a
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
 
+
+
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 Links:
 
