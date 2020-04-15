@@ -158,17 +158,17 @@ body {
     width: 300px;
 }
 
-.btn-success {
+.btn-primary {
     background-color: #00BBF0;
     border: none;
 }
 
-.btn-success:hover {
+.btn-primary:hover {
     color: #fff;
     background-color: rgb(6, 139, 175);
 }
 
-.btn-success:active {
+.btn-primary:active {
     background: #00BBF0 !important;
     outline: none;
 
@@ -314,7 +314,7 @@ div#popupContact {
 
 }
 
-
+/***size of owl arrows***/
 
 .owl-prev>span:nth-child(1) {
     display: inline-block;
