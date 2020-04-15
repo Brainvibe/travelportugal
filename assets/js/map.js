@@ -22,8 +22,8 @@ var countries = {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: countries['pt'].zoom,
-    center: countries['pt'].center,
+    zoom: countries.pt.zoom,
+    center: countries.pt.center,
     mapTypeControl: false,
     panControl: false,
     zoomControl: false,
