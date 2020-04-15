@@ -165,7 +165,6 @@ How To Run This Project Locally
 
 - Recommendation section Photos were download from [Google Travel](https://www.google.com/travel)
 
-The photos used in this project are all free to use, obtained from [Pexels](https://www.pexels.com/). License information can be found [Here](https://www.pexels.com/photo-license/).
 
 
 ### Acknowledgements
