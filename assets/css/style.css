@@ -143,6 +143,7 @@ body {
 #form-contact {
     background-color: transparent;
     border: none;
+    font-family: 'Quicksand',sans-serif;
 }
 
 /*** contact form title ***/
@@ -217,7 +218,7 @@ div#popupContact {
 }
 
 .icon-mail {
-    font-size: 40px;
+    font-size: 25px;
     background-color: transparent;
     color: white;
     /* color: rgba(0, 0, 0, 0.6);*/
@@ -286,6 +287,7 @@ div#popupContact {
     background-color: white;
     position: relative;
     background-color: #2C2E3E;
+    width: 100%;
 }
 
 .recommendation-title {
@@ -328,6 +330,7 @@ div#popupContact {
     width: 100px;
 }
 
+/*** disable Owl dots ***/
 .owl-dots {
     visibility: hidden;
 }
@@ -362,10 +365,7 @@ div#popupContact {
     justify-content: center;
 }
 
-#resultsTable:-webkit-scrollbar {
-    background-color: rgba(0, 0, 0, 0.5) !important;
 
-}
 
 
 /*** table colors ***/
@@ -402,6 +402,7 @@ tr {
     width: 380px;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
+    margin-left: -2%;
 }
 
 /*** table porperties ***/
@@ -411,6 +412,7 @@ tr {
     width: 380px;
     height: 300px;
     text-align: center;
+   
 }
 
 
@@ -889,7 +891,7 @@ i:hover {
     }
 
     .recommendations-container {
-        height: 100vh !important;
+        height: 120vh !important;
     }
 
     .map-container {
@@ -901,14 +903,16 @@ i:hover {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    /****change a little bit the table margin ****/
-    .recommendations-container {
-        height: 100vh;
-    }
+    
+ 
 
     .map-container {
         height: 140vh;
     }
+    #map{
+        height: 400px;
+    }
+  
 }
 
 @media only screen and (min-width: 1440px) {
@@ -931,4 +935,6 @@ i:hover {
     .recommendations-container {
         height: 80vh;
     }
+
+
 }
