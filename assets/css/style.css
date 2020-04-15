@@ -53,7 +53,7 @@ body {
 **********************************/
 .main-container {
     height: 100vh;
-    background: url('../images/main-algarve.webp') no-repeat center center fixed;
+    background: url('../images/main-algarve.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -342,7 +342,7 @@ div#popupContact {
 
 .map-container {
     height: 100vh;
-    background: url('../images/main-porto.webp') no-repeat center center fixed;
+    background: url('../images/main-porto.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
