@@ -46,7 +46,7 @@
     <div class="weather-container d-none d-lg-block">
       <div class="row">
         <div class="col-xs-12">
-          <img class="icon">
+          <img class="icon" alt="Weather Lisbon">
           <p class="temp">Lisbon </p>
         </div>
       </div>
@@ -90,15 +90,15 @@
     <div id="popupContact">
       <!-- Contact Us Form -->
       <form onsubmit="return sendEmail(this);" id="form-contact" class="form-control" name="form">
-        <img id="close" src="assets/images/close.png" height="15" width="15" onclick="div_hide()">
+        <img id="close" src="assets/images/close.png" alt="Close button" height="15" width="15" onclick="div_hide()">
         <label class="contactTitle">Contact us</label>
         <!-- Name -->
         <input type="text" id="name" class="form-control mb-4" placeholder="Name" required>
         <!-- Email -->
         <input type="email" id="email" class="form-control mb-4" placeholder="E-mail" required>
         <div class="form-group">
-          <textarea name="FormControlText" class="form-control rounded-0" id="FormControlText" rows="5" placeholder="Message"
-            required></textarea>
+          <textarea name="FormControlText" class="form-control rounded-0" id="FormControlText" rows="5"
+            placeholder="Message" required></textarea>
         </div>
         <button id="submit" class="btn btn-success btn-block" type="submit">Send</button>
       </form>
@@ -166,14 +166,14 @@
       <div class="owl-stage-outer">
         <div class="owl-stage">
           <div class="owl-item">
-            <img src="assets/images/attraction_tower.jpg">
+            <img alt="Belém Tower" src="assets/images/attraction_tower.jpg">
             <p class="attraction-title">Belém Tower</p>
             <p class="attraction-description">Landmark medieval defensive tower</p>
             <p class="attraction-description">Is a 16th-century fortification located in Lisbon that served as a point
               of embarkation and disembarkation for Portuguese explorers and as a ceremonial gateway to Lisbon</p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_pena.jpg">
+            <img alt="National Palace of Pena" src="assets/images/attraction_pena.jpg">
             <p class="attraction-title">National Palace of Pena</p>
             <p class="attraction-description">Hilltop Romanticist palace in parkland</p>
             <p class="attraction-description">A major expressions of 19th-century Romanticism in the world. UNESCO
@@ -182,14 +182,14 @@
               Wonders of Portugal.</p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_mosteiros.jpg">
+            <img alt="Jerónimos Monastery" src="assets/images/attraction_mosteiros.jpg">
             <p class="attraction-title">Jerónimos Monastery</p>
             <p class="attraction-description">World heritage listed Gothic monastery</p>
             <p class="attraction-description">Joo de Castilho designed the Chapter House and Cloister. Rodrigo Afonso
               assosted him in 1517.</p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_arrabida.jpg">
+            <img alt="Parque Natural da Arrábida" src="assets/images/attraction_arrabida.jpg">
             <p class="attraction-title">Parque Natural da Arrábida</p>
             <p class="attraction-description">Protected natural park on the coast</p>
             <p class="attraction-description">Founded in 1976 and covering an area of 108 square kilometres, situated
@@ -197,7 +197,7 @@
             </p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_lagoa.jpg">
+            <img alt="Lagoa do Fogo" src="assets/images/attraction_lagoa.jpg">
             <p class="attraction-title">Lagoa do Fogo</p>
             <p class="attraction-description">Nature reserve at a volcanic crater lake</p>
             <p class="attraction-description">A crater lake within the Água de Pau Massif stratovolcano
@@ -205,7 +205,7 @@
             </p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_marinha.jpg">
+            <img alt="Praia da Marinha" src="assets/images/attraction_marinha.jpg">
             <p class="attraction-title">Praia da Marinha</p>
             <p class="attraction-description">Scenic beach amid soaring cliffs</p>
             <p class="attraction-description">Considered by the Michelin Guide as one of the 10 most beautiful beaches
@@ -213,7 +213,7 @@
             </p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_serra.jpg">
+            <img alt="Serra da Estrela" src="assets/images/attraction_serra.jpg">
             <p class="attraction-title">Serra da Estrela</p>
             <p class="attraction-description">Glacier, mountain, ski resort, hiking</p>
             <p class="attraction-description">Considered by the Michelin Guide as one of the 10 most beautiful beaches
@@ -221,7 +221,7 @@
             </p>
           </div>
           <div class="owl-item">
-            <img src="assets/images/attraction_oceanario.jpg">
+            <img alt="Oceanário de Lisboa" src="assets/images/attraction_oceanario.jpg">
             <p class="attraction-title">Oceanário de Lisboa</p>
             <p class="attraction-description">Waterside aquarium</p>
             <p class="attraction-description">Considered by the Michelin Guide as one of the 10 most beautiful beaches
@@ -255,11 +255,12 @@
         <div class="map-controls container">
           <form class="form-inline">
             <div class="form-group id=locationField">
-              <label class="sr-only" for="email">Enter City name:</label>
-              <input class="form-control" id="autocomplete" placeholder="Enter a city" type="text" />
+              <label class="sr-only" for="autocomplete">Enter City name:</label>
+              <input class="form-control" name="autocomplete" id="autocomplete" placeholder="Enter a city" type="text" />
             </div>
             <div class="map-selection">
-              <select class="form-control select-option" id="category">
+              <label class="sr-only" for="category">Select your activity:</label>
+              <select class="form-control select-option" name="category" id="category">
                 <option value="" selected>Click to select</option>
                 <option id="accommodation" value="accommodation">Accomodation</option>
                 <option id="attraction" value="attraction">Attractions</option>
@@ -312,9 +313,11 @@
     </div>
   </div>
 
-  <!--Contact section-->
 
-  </div>
+
+
+
+
 
 
   <!--Footer container-->
@@ -324,22 +327,22 @@
         <div class="container-fluid social-icons">
           <div class="row contain-icons">
             <div class="col-xs-4 icon">
-              <a target="_blank" href="https://www.facebook.com">
+              <a target="_blank" aria-label="Facebook" href="https://www.facebook.com">
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
             <div class="col-xs-4 icon">
-              <a target="_blank" href="https://www.twitter.com">
+              <a target="_blank" aria-label="Twitter" href="https://www.twitter.com">
                 <i class="fab fa-twitter"></i>
               </a>
             </div>
             <div class="col-xs-4 icon">
-              <a target="_blank" href="https://www.instagram.com">
+              <a target="_blank" aria-label="Instagram"  href="https://www.instagram.com">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
             <div class="col-xs-4 icon">
-              <a target="_blank" href="https://www.youtube.com">
+              <a target="_blank" aria-label="Youtube" href="https://www.youtube.com"> 
                 <i class="fab fa-youtube"></i>
               </a>
             </div>
@@ -368,7 +371,7 @@
 
 
   <!--Google maps, weather js and main js-->
- <!-- <script src="assets/js/weather.js"></script>-->
+  <!-- <script src="assets/js/weather.js"></script>-->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
   <script src="assets/js/map.js"></script>
