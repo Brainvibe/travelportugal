@@ -143,7 +143,7 @@ body {
 #form-contact {
     background-color: transparent;
     border: none;
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*** contact form title ***/
@@ -225,7 +225,7 @@ div#popupContact {
 }
 
 .icon-mail:hover {
-     color: #ededed;
+    color: #ededed;
 }
 
 
@@ -320,53 +320,57 @@ div#popupContact {
     position: relative;
 }
 
-        .custom-nav {
-            position: absolute;
-            top: 12%;
-            left: -5px;
-            right: 0;
-        }
+.custom-nav {
+    position: absolute;
+    top: 12%;
+    left: -5px;
+    right: 0;
+}
 
-            .owl-prev, .owl-next {
-                position: absolute;
-                height: 100px;
-                color: inherit;
-                background: none;
-                border: none;
-                z-index: 100;
+.owl-prev,
+.owl-next {
+    position: absolute;
+    height: 100px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
 
-                
-            }
-            .owl-prev:focus, .owl-next:focus 
-            {
-            outline: none;
-        }
-            .owl-prev {
-                left: 0;
-            }
 
-            .owl-next {
-                right: 0;
-            }
- 
-            .fa-angle-right {
-                font-size: 45px;
-            }    
+}
 
-            .fa-angle-left {
-                font-size: 45px;
-            }  
-            .owl-theme .owl-nav [class*=owl-]:hover {
-                background: none;
-                border-style: none;
-                
-            }
-         
+.owl-prev:focus,
+.owl-next:focus {
+    outline: none;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.fa-angle-right {
+    font-size: 45px;
+}
+
+.fa-angle-left {
+    font-size: 45px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    border-style: none;
+
+}
+
 
 /*** disable Owl dots 
 https://codepen.io/ramsh/pen/xxbaRdQ***/
 .owl-dots {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 
@@ -446,7 +450,7 @@ tr {
     width: 380px;
     height: 300px;
     text-align: center;
-   
+
 }
 
 
@@ -872,7 +876,7 @@ i:hover {
         height: 90vh;
     }
 
-  
+
 }
 
 
@@ -937,16 +941,17 @@ i:hover {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-    
- 
+
+
 
     .map-container {
         height: 140vh;
     }
-    #map{
+
+    #map {
         height: 400px;
     }
-  
+
 }
 
 @media only screen and (min-width: 1440px) {
