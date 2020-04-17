@@ -12,7 +12,7 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
     
-    let icon = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
+    let icon = "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
     let temp = Math.floor(response.main.temp);
     let weather = response.weather[0].main;
 
