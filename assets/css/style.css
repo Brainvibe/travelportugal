@@ -316,23 +316,57 @@ div#popupContact {
 
 }
 
-/***size of owl arrows***/
-
-.owl-prev>span:nth-child(1) {
-    display: inline-block;
-    font-size: 100px;
-    width: 100px;
+.owl-carousel {
+    position: relative;
 }
 
-.owl-next>span:nth-child(1) {
-    display: inline-block;
-    font-size: 100px;
-    width: 100px;
-}
+        .custom-nav {
+            position: absolute;
+            top: 12%;
+            left: -5px;
+            right: 0;
+        }
 
-/*** disable Owl dots ***/
+            .owl-prev, .owl-next {
+                position: absolute;
+                height: 100px;
+                color: inherit;
+                background: none;
+                border: none;
+                z-index: 100;
+
+                
+            }
+            .owl-prev:focus, .owl-next:focus 
+            {
+            outline: none;
+        }
+            .owl-prev {
+                left: 0;
+            }
+
+            .owl-next {
+                right: 0;
+            }
+ 
+            .fa-angle-right {
+                font-size: 45px;
+            }    
+
+            .fa-angle-left {
+                font-size: 45px;
+            }  
+            .owl-theme .owl-nav [class*=owl-]:hover {
+                background: none;
+                border-style: none;
+                
+            }
+         
+
+/*** disable Owl dots 
+https://codepen.io/ramsh/pen/xxbaRdQ***/
 .owl-dots {
-    visibility: hidden;
+    visibility:hidden;
 }
 
 

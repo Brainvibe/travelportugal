@@ -1,388 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta
+      name="Description"
+      content="Travel Portugal a website that helps you discover several activities around Portugal"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
 
-<head>
-  <meta name="Description"
-    content="Travel Portugal a website that helps you discover several activities around Portugal">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--owlcarousel-->
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel/owl.theme.default.min.css"
+    />
 
-  <!--owlcarousel-->
-  <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!--Style CSS-->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_DhdVSvO47vJEvVzjgvu4l");
+      })();
+    </script>
+    <title>Travel Portugal</title>
+  </head>
 
-  <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_DhdVSvO47vJEvVzjgvu4l");
-    })();
-  </script>
-  <title>Travel Portugal</title>
-</head>
+  <body>
+    <!--Nav bar container-->
 
-<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <a class="navbar-brand" href="#">Travel Portugal</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!--Nav bar container-->
+      <!--Weather api container-->
+      <div class="weather-container d-none d-lg-block">
+        <div class="row">
+          <div class="col-xs-12">
+            <img class="lozad icon" alt="Weather Lisbon" />
+            <p class="temp">Lisbon</p>
+          </div>
+        </div>
+      </div>
+      <!--navbar links-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recommendations">Recommendations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interactive">Map</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-    <a class="navbar-brand" href="#">Travel Portugal</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!--Weather api container-->
-    <div class="weather-container d-none d-lg-block">
-      <div class="row">
-        <div class="col-xs-12">
-          <img class="lozad icon" alt="Weather Lisbon">
-          <p class="temp">Lisbon </p>
+    <!--Main container-->
+    <div class="main-container container-fluid">
+      <div class="opaque-overlay">&nbsp;</div>
+      <div class="title-text">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="title animated fadeIn">Welcome to Travel Portugal</h1>
+            <h2 class="title-second animated fadeIn">
+              Get your travel fix here.
+            </h2>
+            <hr class="hr-title animated fadeIn" />
+          </div>
         </div>
       </div>
     </div>
-    <!--navbar links-->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#recommendations">Recommendations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#interactive">Map</a>
-        </li>
 
-      </ul>
+    <div id="contact-container">
+      <div id="popupContact">
+        <!-- Contact Us Form -->
+        <form
+          onsubmit="return sendEmail(this);"
+          id="form-contact"
+          class="form-control"
+          name="form"
+        >
+          <img
+            class="lozad"
+            id="close"
+            src="assets/images/close.png"
+            alt="Close button"
+            height="15"
+            width="15"
+            onclick="div_hide()"
+          />
+          <label class="contactTitle">Contact us</label>
+          <!-- Name -->
+          <input
+            type="text"
+            id="name"
+            class="form-control mb-4"
+            placeholder="Name"
+            required
+          />
+          <!-- Email -->
+          <input
+            type="email"
+            id="email"
+            class="form-control mb-4"
+            placeholder="E-mail"
+            required
+          />
+          <div class="form-group">
+            <textarea
+              name="FormControlText"
+              class="form-control rounded-0"
+              id="FormControlText"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button
+            id="submit"
+            class="btn btn-primary btn-sm btn-block"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </div>
-  </nav>
 
-  <!--Main container-->
-  <div class="main-container container-fluid">
-    <div class="opaque-overlay">&nbsp;</div>
-    <div class="title-text">
+    <div class="contact-sticky">
+      <i id="popup" onclick="div_show()" class="fas fa-comment icon-mail"></i>
+    </div>
+
+    <!-- Features container-->
+    <div id="features" class="features-container container-fluid">
+      <div class="row">
+        <div class="col-sm-12 title-feature">
+          <p>
+            Use our interactive map to find different activities in Portugal
+          </p>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <i class="fas fa-utensils fa-features"></i>
+          <p class="fas-title">Restaurants</p>
+          <p>
+            Known for its wealth of seafood, spices and olive oil, Portuguese
+            cuisine relies heavily on the Atlantic Ocean and the produce grown
+            throughout the country.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <i class="fas fa-glass-martini-alt fa-features"></i>
+          <p class="fas-title">Nightlife</p>
+          <p>
+            When the sun goes down the beat goes up. There are bars to suit all
+            tastes, from chilled lounge bars to lively music bars that party
+            into the early hours.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <i class="fas fa-landmark fa-features"></i>
+          <p class="fas-title">Attractions</p>
+          <p>
+            Discover the best attractions in Portugal including Mosteiro de
+            Santa Maria da Vitória, Mosteiro de Santa Maria de Alcobaça,
+            Convento de Cristo.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <i class="fas fa-hotel fa-features"></i>
+          <p class="fas-title">Accommodation</p>
+          <p>
+            As one of Europe’s most affordable holiday destinations, tourists
+            can easily enjoy what Portugal has to offer, having accommodation to
+            all budgets.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendations container-->
+
+    <div id="recommendations" class="recommendations-container container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <h1 class="title animated fadeIn">Welcome to Travel Portugal</h1>
-          <h2 class="title-second animated fadeIn">Get your travel fix here.</h2>
-          <hr class="hr-title animated fadeIn">
+          <p class="recommendation-title">Recommendations</p>
+          <hr class="hr-title-recommendations" />
         </div>
       </div>
-    </div>
-  </div>
-
-
-  <div id="contact-container">
-    <div id="popupContact">
-      <!-- Contact Us Form -->
-      <form onsubmit="return sendEmail(this);" id="form-contact" class="form-control" name="form">
-        <img class="lozad" id="close" src="assets/images/close.png" alt="Close button" height="15" width="15"
-          onclick="div_hide()">
-        <label class="contactTitle">Contact us</label>
-        <!-- Name -->
-        <input type="text" id="name" class="form-control mb-4" placeholder="Name" required>
-        <!-- Email -->
-        <input type="email" id="email" class="form-control mb-4" placeholder="E-mail" required>
-        <div class="form-group">
-          <textarea name="FormControlText" class="form-control rounded-0" id="FormControlText" rows="5"
-            placeholder="Message" required></textarea>
-        </div>
-        <button id="submit" class="btn btn-primary btn-sm btn-block" type="submit">Send</button>
-      </form>
-
-    </div>
-  </div>
-
-  <div class="contact-sticky">
-    <i id="popup" onclick="div_show()" class="fas fa-comment icon-mail"></i>
-  </div>
-
-
-  <!-- Features container-->
-  <div id="features" class="features-container container-fluid">
-    <div class="row">
-      <div class="col-sm-12 title-feature">
-        <p>Use our interactive map to find different activities in Portugal</p>
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-        <i class="fas fa-utensils fa-features"></i>
-        <p class="fas-title">Restaurants</p>
-        <p>Known for its wealth of seafood, spices and olive oil, Portuguese cuisine relies heavily on the Atlantic
-          Ocean and the produce grown throughout the country. </p>
-      </div>
-      <div class="col-sm-3">
-        <i class="fas fa-glass-martini-alt fa-features"></i>
-        <p class="fas-title">Nightlife</p>
-        <p>When the sun goes down the beat goes up. There are bars to suit all tastes, from chilled
-          lounge bars to lively music bars that party into the early hours.</p>
-      </div>
-      <div class="col-sm-3">
-        <i class="fas fa-landmark fa-features"></i>
-        <p class="fas-title">Attractions</p>
-        <p>Discover the best attractions in Portugal including Mosteiro de Santa Maria da Vitória, Mosteiro de Santa
-          Maria de Alcobaça, Convento de Cristo.</p>
-      </div>
-      <div class="col-sm-3">
-        <i class="fas fa-hotel fa-features"></i>
-        <p class="fas-title">Accommodation</p>
-        <p>As one of Europe’s most affordable holiday destinations, tourists can easily enjoy what Portugal has to
-          offer, having accommodation to all budgets.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Recommendations container-->
-
-  <div id="recommendations" class="recommendations-container container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <p class="recommendation-title">Recommendations</p>
-        <hr class="hr-title-recommendations">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p class="recommendation-title2">Our recommended attractions</p>
-      </div>
-    </div>
-    <!--owl carousel-->
-    <div class="owl-carousel owl-theme owl-loaded">
-      <div class="owl-stage-outer">
-        <div class="owl-stage">
-          <div class="owl-item">
-            <img class="lozad" alt="Belém Tower" src="assets/images/attraction_tower.png">
-            <p class="attraction-title">Belém Tower</p>
-            <p class="attraction-description">Landmark medieval defensive tower</p>
-            <p class="attraction-description">Is a 16th-century fortification located in Lisbon that served as a point
-              of embarkation and disembarkation for Portuguese explorers and as a ceremonial gateway to Lisbon</p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="National Palace of Pena" src="assets/images/attraction_pena.png">
-            <p class="attraction-title">National Palace of Pena</p>
-            <p class="attraction-description">Hilltop Romanticist palace in parkland</p>
-            <p class="attraction-description">A major expressions of 19th-century Romanticism in the world. UNESCO
-              World
-              Heritage Site and one of the Seven
-              Wonders of Portugal.</p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="Jerónimos Monastery" src="assets/images/attraction_mosteiros.png">
-            <p class="attraction-title">Jerónimos Monastery</p>
-            <p class="attraction-description">World heritage listed Gothic monastery</p>
-            <p class="attraction-description">Former monastery of the Order of Saint Jerome near the Tagus river in the
-              parish of Belém.</p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="Parque Natural da Arrábida" src="assets/images/attraction_arrabida.png">
-            <p class="attraction-title">Parque Natural da Arrábida</p>
-            <p class="attraction-description">Protected natural park on the coast</p>
-            <p class="attraction-description">Founded in 1976 and covering an area of 108 square kilometres, situated
-              between the town of Sesimbra and the city of Setúbal.
-            </p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="Lagoa do Fogo" src="assets/images/attraction_lagoa.png">
-            <p class="attraction-title">Lagoa do Fogo</p>
-            <p class="attraction-description">Nature reserve at a volcanic crater lake</p>
-            <p class="attraction-description">A crater lake within the Água de Pau Massif stratovolcano
-              in the center of the island of São Miguel in the Portuguese archipelago of the Azores.
-            </p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="Praia da Marinha" src="assets/images/attraction_marinha.png">
-            <p class="attraction-title">Praia da Marinha</p>
-            <p class="attraction-description">Scenic beach amid soaring cliffs</p>
-            <p class="attraction-description">Considered by the Michelin Guide as one of the 10 most beautiful beaches
-              in Europe and as one of the 100 most beautiful beaches in the world.
-            </p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="Serra da Estrela" src="assets/images/attraction_serra.png">
-            <p class="attraction-title">Serra da Estrela</p>
-            <p class="attraction-description">Glacier, mountain, ski resort, hiking</p>
-            <p class="attraction-description">Is situated in the largest mountain range in
-              Portugal - the Serra da Estrela, and is the source of the rivers Mondego, Zêzere, and Alva.
-            </p>
-          </div>
-          <div class="owl-item">
-            <img class="lozad" alt="Oceanário de Lisboa" src="assets/images/attraction_oceanario.png">
-            <p class="attraction-title">Oceanário de Lisboa</p>
-            <p class="attraction-description">Waterside aquarium</p>
-            <p class="attraction-description">It is located in the Parque das Nações, which was the exhibition grounds
-              for the Expo '98. It is the largest indoor aquarium in Europe.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Map container -->
-  <div id="interactive" class="map-container container-fluid">
-    <div class="opaque-overlay">&nbsp;</div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p class="map-title">Interactive Map</p>
-        <hr class="hr-title">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div id="location">
-          <div id="map">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="map-controls container">
-          <form class="form-inline">
-            <div class="form-group id=locationField">
-              <label class="sr-only" for="autocomplete">Enter City name:</label>
-              <input class="form-control" name="autocomplete" id="autocomplete" placeholder="Enter a city"
-                type="text" />
-            </div>
-            <div class="map-selection">
-              <label class="sr-only" for="category">Select your activity:</label>
-              <select class="form-control select-option" name="category" id="category">
-                <option value="" selected>Click to select</option>
-                <option id="accommodation" value="accommodation">Accomodation</option>
-                <option id="attraction" value="attraction">Attractions</option>
-                <option id="food" value="food">Food</option>
-                <option id="drink" value="drink">Bars</option>
-                <option id="club" value="attraction">Clubs</option>
-                <option id="park" value="parks">Parks</option>
-              </select>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12" id="hr">
-        <div id="results-div">
-          <table id="resultsTable">
-            <tbody id="results"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div style="display:none">
-    <div id="info-content">
-      <table>
-        <tr id="iw-url-row" class="iw_table_row">
-          <td id="iw-icon" class="iw_table_icon"></td>
-          <td id="iw-url"></td>
-        </tr>
-        <tr id="iw-address-row" class="iw_table_row">
-          <td class="iw_attribute_name">Address:</td>
-          <td id="iw-address"></td>
-        </tr>
-        <tr id="iw-phone-row" class="iw_table_row">
-          <td class="iw_attribute_name">Telephone:</td>
-          <td id="iw-phone"></td>
-        </tr>
-        <tr id="iw-rating-row" class="iw_table_row">
-          <td class="iw_attribute_name">Rating:</td>
-          <td id="iw-rating"></td>
-        </tr>
-        <tr id="iw-website-row" class="iw_table_row">
-          <td class="iw_attribute_name">Website:</td>
-          <td id="iw-website"></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  <!--Footer container-->
-  <div class=" container-fluid footer-container">
-    <section class="footer-section">
       <div class="row">
-        <div class="container-fluid social-icons">
-          <div class="row contain-icons">
-            <div class="col-xs-4 icon">
-              <a target="_blank" aria-label="Facebook" rel="noreferrer" href="https://www.facebook.com">
-                <i class="fab fa-facebook"></i>
-              </a>
+        <div class="col-sm-12">
+          <p class="recommendation-title2">Our recommended attractions</p>
+        </div>
+      </div>
+      <!--owl carousel-->
+      <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Belém Tower"
+                src="assets/images/attraction_tower.png"
+              />
+              <p class="attraction-title">Belém Tower</p>
+              <p class="attraction-description">
+                Landmark medieval defensive tower
+              </p>
+              <p class="attraction-description">
+                Is a 16th-century fortification located in Lisbon that served as
+                a point of embarkation and disembarkation for Portuguese
+                explorers and as a ceremonial gateway to Lisbon
+              </p>
             </div>
-            <div class="col-xs-4 icon">
-              <a target="_blank" aria-label="Twitter" rel="noreferrer" href="https://www.twitter.com">
-                <i class="fab fa-twitter"></i>
-              </a>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="National Palace of Pena"
+                src="assets/images/attraction_pena.png"
+              />
+              <p class="attraction-title">National Palace of Pena</p>
+              <p class="attraction-description">
+                Hilltop Romanticist palace in parkland
+              </p>
+              <p class="attraction-description">
+                A major expressions of 19th-century Romanticism in the world.
+                UNESCO World Heritage Site and one of the Seven Wonders of
+                Portugal.
+              </p>
             </div>
-            <div class="col-xs-4 icon">
-              <a target="_blank" aria-label="Instagram" rel="noreferrer" href="https://www.instagram.com">
-                <i class="fab fa-instagram"></i>
-              </a>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Jerónimos Monastery"
+                src="assets/images/attraction_mosteiros.png"
+              />
+              <p class="attraction-title">Jerónimos Monastery</p>
+              <p class="attraction-description">
+                World heritage listed Gothic monastery
+              </p>
+              <p class="attraction-description">
+                Former monastery of the Order of Saint Jerome near the Tagus
+                river in the parish of Belém.
+              </p>
             </div>
-            <div class="col-xs-4 icon">
-              <a target="_blank" aria-label="Youtube" rel="noreferrer" href="https://www.youtube.com">
-                <i class="fab fa-youtube"></i>
-              </a>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Parque Natural da Arrábida"
+                src="assets/images/attraction_arrabida.png"
+              />
+              <p class="attraction-title">Parque Natural da Arrábida</p>
+              <p class="attraction-description">
+                Protected natural park on the coast
+              </p>
+              <p class="attraction-description">
+                Founded in 1976 and covering an area of 108 square kilometres,
+                situated between the town of Sesimbra and the city of Setúbal.
+              </p>
             </div>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Lagoa do Fogo"
+                src="assets/images/attraction_lagoa.png"
+              />
+              <p class="attraction-title">Lagoa do Fogo</p>
+              <p class="attraction-description">
+                Nature reserve at a volcanic crater lake
+              </p>
+              <p class="attraction-description">
+                A crater lake within the Água de Pau Massif stratovolcano in the
+                center of the island of São Miguel in the Portuguese archipelago
+                of the Azores.
+              </p>
+            </div>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Praia da Marinha"
+                src="assets/images/attraction_marinha.png"
+              />
+              <p class="attraction-title">Praia da Marinha</p>
+              <p class="attraction-description">
+                Scenic beach amid soaring cliffs
+              </p>
+              <p class="attraction-description">
+                Considered by the Michelin Guide as one of the 10 most beautiful
+                beaches in Europe and as one of the 100 most beautiful beaches
+                in the world.
+              </p>
+            </div>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Serra da Estrela"
+                src="assets/images/attraction_serra.png"
+              />
+              <p class="attraction-title">Serra da Estrela</p>
+              <p class="attraction-description">
+                Glacier, mountain, ski resort, hiking
+              </p>
+              <p class="attraction-description">
+                Is situated in the largest mountain range in Portugal - the
+                Serra da Estrela, and is the source of the rivers Mondego,
+                Zêzere, and Alva.
+              </p>
+            </div>
+            <div class="owl-item">
+              <img
+                class="lozad"
+                alt="Oceanário de Lisboa"
+                src="assets/images/attraction_oceanario.png"
+              />
+              <p class="attraction-title">Oceanário de Lisboa</p>
+              <p class="attraction-description">Waterside aquarium</p>
+              <p class="attraction-description">
+                It is located in the Parque das Nações, which was the exhibition
+                grounds for the Expo '98. It is the largest indoor aquarium in
+                Europe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="owl-theme">
+          <div class="owl-controls">
+            <div class="custom-nav owl-nav"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Map container -->
+    <div id="interactive" class="map-container container-fluid">
+      <div class="opaque-overlay">&nbsp;</div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="map-title">Interactive Map</p>
+          <hr class="hr-title" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="location">
+            <div id="map"></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="container-fluid footer-container">
-          <div class="col-sm-12">
-            <span>Designed by Nuno Nunes</span>
+        <div class="col-sm-12">
+          <div class="map-controls container">
+            <form class="form-inline">
+              <div class="form-group id=locationField">
+                <label class="sr-only" for="autocomplete"
+                  >Enter City name:</label
+                >
+                <input
+                  class="form-control"
+                  name="autocomplete"
+                  id="autocomplete"
+                  placeholder="Enter a city"
+                  type="text"
+                />
+              </div>
+              <div class="map-selection">
+                <label class="sr-only" for="category"
+                  >Select your activity:</label
+                >
+                <select
+                  class="form-control select-option"
+                  name="category"
+                  id="category"
+                >
+                  <option value="" selected>Click to select</option>
+                  <option id="accommodation" value="accommodation"
+                    >Accomodation</option
+                  >
+                  <option id="attraction" value="attraction"
+                    >Attractions</option
+                  >
+                  <option id="food" value="food">Food</option>
+                  <option id="drink" value="drink">Bars</option>
+                  <option id="club" value="attraction">Clubs</option>
+                  <option id="park" value="parks">Parks</option>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+      <div class="row">
+        <div class="col-sm-12" id="hr">
+          <div id="results-div">
+            <table id="resultsTable">
+              <tbody id="results"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!--Bootstrap, Popper and jQuery-->
+    <div style="display: none;">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--Footer container-->
+    <div class="container-fluid footer-container">
+      <section class="footer-section">
+        <div class="row">
+          <div class="container-fluid social-icons">
+            <div class="row contain-icons">
+              <div class="col-xs-4 icon">
+                <a
+                  target="_blank"
+                  aria-label="Facebook"
+                  rel="noreferrer"
+                  href="https://www.facebook.com"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+              <div class="col-xs-4 icon">
+                <a
+                  target="_blank"
+                  aria-label="Twitter"
+                  rel="noreferrer"
+                  href="https://www.twitter.com"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="col-xs-4 icon">
+                <a
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noreferrer"
+                  href="https://www.instagram.com"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="col-xs-4 icon">
+                <a
+                  target="_blank"
+                  aria-label="Youtube"
+                  rel="noreferrer"
+                  href="https://www.youtube.com"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container-fluid footer-container">
+            <div class="col-sm-12">
+              <span>Designed by Nuno Nunes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-  <!--owlcarousel-->
+    <!--Bootstrap, Popper and jQuery-->
 
-  <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+    <!--owlcarousel-->
 
-  <!--Google maps, weather js and main js-->
-  <!-- <script src="assets/js/weather.js"></script>-->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/map.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
+    <!--Google maps, weather js and main js-->
+    <!-- <script src="assets/js/weather.js"></script>-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/map.js"></script>
 
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"
-    async defer></script>
-
-</body>
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdzBP1H3inc7-B_qkwju5Zaw1R0PSBbLs&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
 </html>

@@ -1,23 +1,28 @@
 //loading carousel and settings
 
+
 $('.owl-carousel').owlCarousel({
-  stagePadding: 60,
-  loop:true,
-  margin:50,
-  nav:true,
-  
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
-  }
-})
+    stagePadding: 50,
+    loop: true,
+    margin: 60,
+    nav: true,
+    navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    navContainer: '.custom-nav',
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
+            items: 2
+        },
+        1000:{
+            items: 3
+        }
+    }
+});
 
 
 //Function To Display Popup
