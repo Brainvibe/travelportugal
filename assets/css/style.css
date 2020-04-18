@@ -33,7 +33,7 @@ body {
     font-family: 'Caveat Brush', cursive;
     margin: 0;
     font-size: 30px;
-    font-weight: 550;
+
     color: white;
 }
 
@@ -133,7 +133,6 @@ body {
     transform: translateX(-100%);
     z-index: 4;
     border-radius: 99em;
-    border: 5px solid #00BBF0;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
     background-color: #00BBF0;
 }
@@ -616,7 +615,7 @@ i:hover {
         margin-top: 5px;
         height: 200px;
         width: auto;
-        padding: 0 auto;
+        
     }
 
     .map-controls {
@@ -741,7 +740,7 @@ i:hover {
         margin-top: 5px;
         height: 200px;
         width: auto;
-        padding: 0 auto;
+       
     }
 
     .map-controls {
@@ -860,7 +859,7 @@ i:hover {
 }
 
 /**** Mobile phones XL resolution like Iphone X and Pixel 2 XL ****/
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 
 
 
