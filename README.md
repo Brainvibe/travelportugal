@@ -1,6 +1,6 @@
 # Travel Portugal
 <p align="center">
-<img width="600" height="384" src="https://github.com/Brainvibe/travelportugal/blob/master/wireframes/website_screenshot.png">
+<img width="700" height="400" src="https://github.com/Brainvibe/travelportugal/blob/master/wireframes/website_screenshot.png">
 </p>
 
 Live version [here](https://brainvibe.github.io/travelportugal/)
