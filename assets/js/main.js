@@ -34,6 +34,7 @@ function div_hide() {
     document.getElementById('contact-container').style.display = "none";
 }
 
+// MailJS function 
 function sendEmail(contactForm) {
     emailjs.send('gmail', 'travel_portugal', {
             "from_name": contactForm.name.value,

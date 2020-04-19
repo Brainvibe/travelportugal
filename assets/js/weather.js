@@ -1,4 +1,6 @@
 //weather for Lisbon
+
+//loading api 
 var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -9,6 +11,8 @@ var settings = {
 		"x-rapidapi-key": "4c396de91amsh9223e6fb0da20f5p11b1a9jsne7affd5ec411"
 	}
 }
+
+// load image and temp text to weather container
 
 $.ajax(settings).done(function (response) {
     

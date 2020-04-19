@@ -20,6 +20,8 @@ var countries = {
 
 };
 
+//initialize map and theme 
+
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: countries.pt.zoom,
@@ -206,7 +208,7 @@ function onPlaceChanged() {
       };
       doNearbySearch(search);
     } else {
-      $('#autocomplete').attr("placeholder", "Enter a town or city");
+      $('#autocomplete').attr("placeholder", "Enter a city");
     }
   } else if ($("#park").is(':selected')) {
     if (place.geometry) {
@@ -258,7 +260,7 @@ function onPlaceChanged() {
     }
   }
 }
-// Search for hotels in the selected city, within the viewport of the map.
+// Search for activities in the selected city, within the viewport of the map.
 function doNearbySearch(search) {
 
   places.nearbySearch(search, function (results, status) {
@@ -267,7 +269,7 @@ function doNearbySearch(search) {
       clearMarkers();
 
       $('#hr').show();
-      // Create a marker for each hotel found, and
+      // Create a marker for each activitie found, and
       // assign a letter of the alphabetic to each marker icon.
       for (var i = 0; i < results.length; i++) {
         var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
@@ -278,7 +280,7 @@ function doNearbySearch(search) {
           animation: google.maps.Animation.DROP,
           icon: markerIcon
         });
-        // If the user clicks a hotel marker, show the details of that hotel
+        // If the user clicks a activity marker, show the details of that place
         // in an info window.
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], 'click', showInfoWindow);
@@ -288,6 +290,8 @@ function doNearbySearch(search) {
     }
   });
 }
+
+// clear all markers in the map
 
 function clearMarkers() {
   for (var i = 0; i < markers.length; i++) {
@@ -324,11 +328,15 @@ function setAutocompleteCountry() {
   clearMarkers();
 }
 
+// setup markers in the map 
+
 function dropMarker(i) {
   return function () {
     markers[i].setMap(map);
   };
 }
+
+//function to create the table with all results
 
 function addResult(result, i) {
   var results = document.getElementById('results');
@@ -355,6 +363,8 @@ function addResult(result, i) {
   results.appendChild(tr);
 }
 
+// clear results 
+
 function clearResults() {
   var results = document.getElementById('results');
   while (results.childNodes[0]) {
@@ -362,8 +372,8 @@ function clearResults() {
   }
 }
 
-// Get the place details for a hotel. Show the information in an info window,
-// anchored on the marker for the hotel that the user selected.
+// Get the place details. Show the information in an info window,
+// anchored on the marker place the user selected.
 function showInfoWindow() {
   var marker = this;
   places.getDetails({
@@ -394,9 +404,7 @@ function buildIWContent(place) {
     document.getElementById('iw-phone-row').style.display = 'none';
   }
 
-  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
-  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
-  // for the rating points not achieved.
+  // Assign a five-star rating to searched place if available, using a black star ('&#10029;')
   if (place.rating) {
     var ratingHtml = '';
     for (var i = 0; i < 5; i++) {
