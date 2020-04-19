@@ -7,7 +7,6 @@
 * [Features](#features)
 * [Wireframes](#wireframes)
 * [Technologies](#technologies-used)
-* [Wireframes](#wireframes)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -15,8 +14,8 @@
 
 # Project description
 
-Travel Portugal is a one page application designed to help users plan their next holidays and discover several touristic activities in Portugal. These activities include: Accommodations, touristic attractions, restaurants, cafes, parks, bars and clubs. Users have available a list of recommendations of the most known places to visit in Portugal in order to help planning future holidays, with a brief description of each place.
-Users can use the interactive map to search for all activities available on any city in portugal with more detailed information where it'll show all the information such as location, address, site and contact.
+Travel Portugal is a one page application designed to help users plan their next holidays and discover several touristic activities in Portugal. These activities include: accommodations, touristic attractions, restaurants, cafes, parks, bars and clubs. Users have available a list of recommendations of the most known places to visit in Portugal in order to help planning future holidays, with a brief description of each place.
+Users can use the interactive map to search for all activities available in any city in portugal with more detailed information where it'll show all the information such as location, address, site and contact.
 
 ## UX
 
@@ -24,13 +23,13 @@ Users can use the interactive map to search for all activities available on any 
 
 * Travel agencies that look to gather more information to create their holiday bundles.
 * Tourists that want to plan their holidays or already booked a holiday to Portugal.
-* Users curious about what Portugal has to offer.
+* Users curious about what Portugal has to offer as a holiday destination.
 
 ### User Stories
 
 * As a tourist or Travel Agency, I want to find easily the information I need.
 * As a general user, I want a contact option, in case I need more detailed information.
-* As a tourist, I want to see recommended options to have an idea where to go or a start point to plan my holidays.
+* As a tourist, I want to see recommended options to have an idea where to go or a starting point to plan my holidays.
 * As a travel agency, I want to have information on all attractions or any specific activities in a certain location.
 * As a tourist, I want to be able to find any commodities available to me on a specific city I want to visit.
 
@@ -51,7 +50,7 @@ Users can use the interactive map to search for all activities available on any 
 * Autocomplete 
     - Integrated in the City input box, it helps the user choose the correct location when they type in what they're looking for.    
 * Contact icon
-    - Provides a simple way to contact Travel Portugal with a single click. It will show a simple form where the user can submit-request for information. User can close the form, and return to the page and keep browsing. EmailJS was used for the email send functionality.
+    - Provides a simple way to contact Travel Portugal with a single click. It will show a simple form where the users can submit-request for information. User can close the form, and return to the page and keep browsing. EmailJS was used for the email send functionality.
 * Footer - Provides links to the relevant social websites.
 
 ## Wireframes
@@ -129,16 +128,16 @@ Users can use the interactive map to search for all activities available on any 
 
 * **Google dev tools**
     - Audit tool
-        - Accessability - alt img tags were not correctly added for screen readers and lack of labels in contact form. Added the missing tags and fixed. It's now scored 100%.
+        - Accessibility - alt img tags were not correctly added for screen readers and lack of labels in contact form. Added the missing tags and fixed. It's now scored 100%.
 
-        - SEO - It detected that there was no meta description, added meta description. It's now score 100%
+        - SEO - It detected that there was no meta description, added meta description. It's now scored 100%.
 
         - Best Practices  
             - Images were not with the correct size. Resized all images with the correct resolution with [ResizeImage](https://resizeimage.net/).
             - The score is now 93%.
 
         - Performance 
-            - Images were too big and therefore causing loading times to increase, converted all images to webp and used fall back option so they can be rendered the images in png on browsers that don't support webp like Apple devices. I used the image compression feature from [ResizeImage](https://resizeimage.net/). The score is now 81%. )
+            - Images were too big and therefore causing loading times to increase, converted all images to webp and used fall back option so they can be rendered the images in png on browsers that don't support webp like Apple devices. I used the image compression feature from [ResizeImage](https://resizeimage.net/). 
 
             - Perfomance score may vary since it depends on third party vendors and APIs to load 
 
@@ -227,7 +226,7 @@ How To Run This Project Locally
 * Opaque overlay from the Whiskey Drop Code institute mini-project.
 * EmailJS implementation from Code institute MailJS lesson.
 * Google maps API Part of the code was from documentation available from examples.
-* Stackoverflow for the locations search. 
+* Stackoverflow for the locations search.
 
 As usual I want to thank my mentor *Victor Miclovich* for his great knowledge and experience with valuable feedback in our mentoring sessions.
 
