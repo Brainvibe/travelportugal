@@ -1,5 +1,9 @@
 # Travel Portugal
+<p align="center">
+<img width="1000" height="400" src="https://github.com/Brainvibe/travelportugal/blob/master/wireframes/website_screenshot.png">
+</p>
 
+Live version [here](https://brainvibe.github.io/travelportugal/)
 ## Index
 
 * [Project description](#project-description)
@@ -189,7 +193,7 @@ Users can use the interactive map to search for all activities available in any 
 
 ## Deployment
 
-This page is hosted in GitHub Pages, here's how to deploy it
+This page is hosted in GitHub Pages, here's how to deploy it.
 
     Log into GitHub.
     Go to settings and scroll down to GitHub Pages section.
@@ -198,7 +202,7 @@ This page is hosted in GitHub Pages, here's how to deploy it
     To access the project scroll down again to GitHub Pages section and click on the provided link.
     Link also at top of this Readme file.
 
-How To Run This Project Locally
+How to run this project locally.
 
     Go to Travel Portugal repository page.
     Click on "Clone or download" green button.
@@ -226,7 +230,8 @@ How To Run This Project Locally
 * Opaque overlay from the Whiskey Drop Code institute mini-project.
 * EmailJS implementation from Code institute MailJS lesson.
 * Google maps API Part of the code was from documentation available from examples.
-* Stackoverflow for the locations search.
+* Locations search adaptation from [stackoverflow](https://stackoverflow.com/)
+* Webp fallback image load from [CSS-tricks](https://css-tricks.com/using-webp-images/)
 
 As usual I want to thank my mentor *Victor Miclovich* for his great knowledge and experience with valuable feedback in our mentoring sessions.
 
