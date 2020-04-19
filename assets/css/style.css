@@ -33,7 +33,6 @@ body {
     font-family: 'Caveat Brush', cursive;
     margin: 0;
     font-size: 30px;
-
     color: white;
 }
 
@@ -208,6 +207,8 @@ img#close {
     cursor: pointer
 }
 
+/***pop up form ***/
+
 div#popupContact {
     position: absolute;
     left: 50%;
@@ -257,17 +258,18 @@ div#popupContact {
 
 /*** title ***/
 
+.title-feature {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 .fas-title {
     margin-top: 20px;
     color: black;
     font-weight: 600;
 }
 
-.title-feature {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
 
 /*********************************
     
@@ -275,7 +277,7 @@ div#popupContact {
 
 **********************************/
 
-
+/*** container ***/
 
 .recommendations-container {
     height: 80vh;
@@ -289,18 +291,23 @@ div#popupContact {
     width: 100%;
 }
 
+/*** title ***/
+
 .recommendation-title {
     margin-top: 40px;
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
 }
+/*** hr ***/
 
 .hr-title-recommendations {
     margin-top: 5px;
     border-top: 1px solid rgb(255, 250, 250);
     width: 20%;
 }
+
+/*** attraction title ***/
 
 .attraction-title {
     margin-top: 20px;
@@ -309,15 +316,21 @@ div#popupContact {
     font-weight: bold;
 }
 
+/*** attraction description ***/
+
 .attraction-description {
     font-family: 'Quicksand', sans-serif;
     font-size: 12px;
 
 }
 
+/*** owl carousel position ***/
+
 .owl-carousel {
     position: relative;
 }
+
+/*** custom nav for owl carousel ***/
 
 .custom-nav {
     position: absolute;
@@ -338,6 +351,7 @@ div#popupContact {
 
 }
 
+/*** remove outline while focus ***/
 .owl-prev:focus,
 .owl-next:focus {
     outline: none;
@@ -351,6 +365,7 @@ div#popupContact {
     right: 0;
 }
 
+/*** size of side arrows ***/
 .fa-angle-right {
     font-size: 45px;
 }
@@ -359,15 +374,14 @@ div#popupContact {
     font-size: 45px;
 }
 
+/*** hover styling ***/
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
     border-style: none;
 
 }
 
-
-/*** disable Owl dots 
-https://codepen.io/ramsh/pen/xxbaRdQ***/
+/*** disable Owl dots ***/
 .owl-dots {
     visibility: hidden;
 }
@@ -379,6 +393,7 @@ https://codepen.io/ramsh/pen/xxbaRdQ***/
 
 **********************************/
 
+/*** map container ***/
 
 .map-container {
     height: 100vh;
@@ -394,6 +409,16 @@ https://codepen.io/ramsh/pen/xxbaRdQ***/
     color: white;
 }
 
+/*** title ***/
+
+.map-title {
+    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
 /*Controls settings*/
 
 .map-controls {
@@ -401,9 +426,6 @@ https://codepen.io/ramsh/pen/xxbaRdQ***/
     margin-top: 30px;
     justify-content: center;
 }
-
-
-
 
 /*** table colors ***/
 
@@ -419,11 +441,12 @@ tr {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+/*** scroll bar transparent ***/
+
 .gm-style .gm-style-iw-d::-webkit-scrollbar-track,
 .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
     background: transparent;
 }
-
 
 /*** table div settings ***/
 
@@ -442,16 +465,16 @@ tr {
     margin-left: -2%;
 }
 
-/*** table porperties ***/
+/*** results table porperties ***/
 
 #resultsTable {
     position: relative;
     width: 380px;
     height: 300px;
     text-align: center;
-
 }
 
+/*** search positioning ***/
 
 .map-selection {
     width: 200px;
@@ -476,6 +499,7 @@ tr {
 }
 
 
+/*** attributes positioning in the map ***/
 
 .placeIcon {
     width: 20px;
@@ -487,8 +511,6 @@ tr {
     width: 24px;
     height: 24px;
 }
-
-
 
 #rating {
     font-size: 13px;
@@ -508,17 +530,6 @@ tr {
     text-align: right;
 }
 
-.map-title {
-    margin-top: 40px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    margin-bottom: 20px;
-
-}
-
-
-
-
 /*********************************
     
           Footer section
@@ -534,10 +545,14 @@ tr {
     margin: 0;
 }
 
+/*** color icons ***/
+
 .social-icons {
     color: white;
     font-size: 30px;
 }
+
+/*** icons position ***/
 
 .contain-icons {
     justify-content: center;
@@ -557,7 +572,7 @@ i:hover {
     color: gray;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) Landscape */
 
 
 @media only screen and (max-width: 600px) and (orientation:landscape) {
@@ -682,6 +697,10 @@ i:hover {
 
 }
 
+
+/* Extra small devices (phones, 600px and down) Portrait */
+
+
 @media only screen and (max-width: 600px) and (orientation:portrait) {
 
     /***Main section ****/
@@ -713,7 +732,7 @@ i:hover {
     /***recommendations ****/
 
     .recommendations-container {
-        height: 130vh;
+        height: 100vh;
     }
 
     /***contact****/
@@ -733,7 +752,7 @@ i:hover {
 
     /****map ***/
     .map-container {
-        height: 180vh;
+        height: 140vh;
     }
 
     #map {
@@ -813,7 +832,7 @@ i:hover {
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up)  portrait*/
 @media only screen and (min-width: 600px) and (orientation:portrait) {
 
 
@@ -833,6 +852,9 @@ i:hover {
         height: 70vh;
     }
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up)  Landscape*/
 
 @media only screen and (min-width: 600px) and (orientation:landscape) {
     .title {
@@ -858,7 +880,7 @@ i:hover {
     }
 }
 
-/**** Mobile phones XL resolution like Iphone X and Pixel 2 XL ****/
+/*** Mobile phones XL resolution like Iphone X and Pixel 2 XL Portrait ***/
 @media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 
 
@@ -878,19 +900,40 @@ i:hover {
 
 }
 
+/*** Mobile phones XL resolution like Iphone X and Pixel 2 XL Landscape ***/
 
-/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Medium devices (landscape tablets, 768px and up) Portrait */
+
 @media only screen and (min-width: 768px) and (orientation:portrait) {
 
     .features-container {
-        height: 60vh;
+        height: 50vh;
     }
 
     .recommendations-container {
-        height: 75vh;
+        height: 60vh;
     }
+    .title-second{
+        font-size: 30px;
+    }
+    .hr-title{
+        width:50%;
+
+    }
+    .map-container {
+        height: 100vh;
+    }
+    .fa-features{
+        margin-top: 0;
+    }
+    
+
 
 }
+
+/* Medium devices (landscape tablets, 768px and up) Landscape */
 
 @media only screen and (min-width: 768px) and (orientation:landscape) {
 
@@ -904,7 +947,8 @@ i:hover {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops,tablets 992px and up) portrait*/
+
 @media only screen and (min-width: 992px) and (orientation:portrait) {
 
     .features-container {
@@ -921,6 +965,9 @@ i:hover {
 
 }
 
+/* Large devices (laptops/desktops, 992px and up) landscape */
+
+
 @media only screen and (min-width: 992px) and (orientation:landscape) {
 
     .features-container {
@@ -928,19 +975,17 @@ i:hover {
     }
 
     .recommendations-container {
-        height: 120vh !important;
+        height: 100vh !important;
     }
 
     .map-container {
-        height: 120vh;
+        height: 130vh;
     }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-
+@media only screen and (min-width: 1200px) and (max-width:1339px){
 
 
     .map-container {
@@ -952,6 +997,10 @@ i:hover {
     }
 
 }
+
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+
 
 @media only screen and (min-width: 1440px) {
     .title {
