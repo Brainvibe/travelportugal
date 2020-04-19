@@ -144,12 +144,19 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+/*** text area resize disabled ****/
+
+#FormControlText{
+    resize:none;
+}
+
 /*** contact form title ***/
 .contactTitle {
     font-size: 25px;
     color: white;
 
 }
+
 
 /*** Submit button ***/
 
@@ -664,6 +671,7 @@ i:hover {
         display: inline-block;
         height: 300px;
         width: 300px;
+        margin-left:2%;
     }
 
     #resultsTable {
@@ -694,7 +702,6 @@ i:hover {
     .iw_attribute_name {
         display: none !important;
     }
-
 }
 
 
@@ -793,6 +800,7 @@ i:hover {
         display: inline-block;
         height: 300px;
         width: 300px;
+       
     }
 
     #resultsTable {
@@ -878,6 +886,9 @@ i:hover {
         margin-top: 10px;
         height: 250px;
     }
+
+
+    
 }
 
 /*** Mobile phones XL resolution like Iphone X and Pixel 2 XL Portrait ***/
